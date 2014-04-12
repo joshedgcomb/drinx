@@ -31,6 +31,7 @@
                     </view>
                     <connections>
                         <outlet property="cornerButton" destination="ZYc-8c-MOt" id="5Nm-RA-i4c"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="favs" id="0t7-JI-Hj2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYR-uZ-awz" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -101,6 +101,7 @@
 			NSLog(@"add");
 		} else if (index == 2) {
 			NSLog(@"favs");
+            [self performSegueWithIdentifier:@"favs" sender:self.cornerButton];
 		} else if (index == 3) {
 			NSLog(@"drinks");
 		}
