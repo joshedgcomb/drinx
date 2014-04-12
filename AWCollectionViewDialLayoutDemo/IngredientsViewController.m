@@ -9,6 +9,7 @@
 #import "IngredientsViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface IngredientsViewController ()
 
@@ -145,6 +146,11 @@
         controller.viewTitle = @"All Drinks";
         controller.numnum = 3;
     }
+    else if ([segue.identifier isEqualToString:@"mixToDetail"])  {
+        DetailViewController* controller = (DetailViewController *) [segue destinationViewController];
+        controller.theDrink = self.myDrink;
+        
+    }
 }
 
 
@@ -189,4 +195,135 @@
 }
 
 
+
+- (IBAction)mix:(id)sender {
+        PFQuery *query = [PFQuery queryWithClassName:@"Drinks"];
+        [query whereKey:@"firstIngred" equalTo:self.firstIngred.text];
+        NSArray *results= [query findObjects];
+        if (results.count > 0){
+             self.myDrink = [results objectAtIndex:0];
+            [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
+            NSLog(@"result found");
+        }
+        else{
+            [query whereKey:@"secondIngred" equalTo:self.firstIngred.text];
+            results= [query findObjects];
+            if (results.count > 0){
+                // segue to detail view of first object in list
+                NSLog(@"result found");
+            }
+            else{
+                [query whereKey:@"thirdIngred" equalTo:self.firstIngred.text];
+                results= [query findObjects];
+                if (results.count > 0){
+                    // segue to detail view of first object in list
+                    NSLog(@"result found");
+                }
+                else{
+                    [query whereKey:@"fourthIngred" equalTo:self.firstIngred.text];
+                    results= [query findObjects];
+                    if (results.count > 0){
+                        // segue to detail view of first object in list
+                        NSLog(@"result found");
+                    }
+                    else{
+                        [query whereKey:@"firstIngred" equalTo:self.secondIngred.text];
+                        results= [query findObjects];
+                        if (results.count > 0){
+                            // segue to detail view of first object in list
+                            NSLog(@"result found");
+                        }
+                        else{
+                            [query whereKey:@"secondIngred" equalTo:self.secondIngred.text];
+                            results= [query findObjects];
+                            if (results.count > 0){
+                                // segue to detail view of first object in list
+                                NSLog(@"result found");
+                            }
+                            else{
+                                [query whereKey:@"thirdIngred" equalTo:self.secondIngred.text];
+                                results= [query findObjects];
+                                if (results.count > 0){
+                                    // segue to detail view of first object in list
+                                    NSLog(@"result found");
+                                }
+                                else{
+                                    [query whereKey:@"fourthIngred" equalTo:self.secondIngred.text];
+                                    results= [query findObjects];
+                                    if (results.count > 0){
+                                        // segue to detail view of first object in list
+                                        NSLog(@"result found");
+                                    }
+                                    else{
+                                        [query whereKey:@"firstIngred" equalTo:self.thirdIngred.text];
+                                        results= [query findObjects];
+                                        if (results.count > 0){
+                                            // segue to detail view of first object in list
+                                            NSLog(@"result found");
+                                        }
+                                        else{
+                                            [query whereKey:@"secondIngred" equalTo:self.thirdIngred.text];
+                                            results= [query findObjects];
+                                            if (results.count > 0){
+                                                // segue to detail view of first object in list
+                                                NSLog(@"result found");
+                                            }
+                                            else{
+                                                [query whereKey:@"thirdIngred" equalTo:self.thirdIngred.text];
+                                                results= [query findObjects];
+                                                if (results.count > 0){
+                                                    // segue to detail view of first object in list
+                                                    NSLog(@"result found");
+                                                }
+                                                else{
+                                                    [query whereKey:@"fourthIngred" equalTo:self.thirdIngred.text];
+                                                    results= [query findObjects];
+                                                    if (results.count > 0){
+                                                        // segue to detail view of first object in list
+                                                        NSLog(@"result found");
+                                                    }
+                                                    else{
+                                                        [query whereKey:@"firstIngred" equalTo:self.fourthIngred.text];
+                                                        results= [query findObjects];
+                                                        if (results.count > 0){
+                                                            // segue to detail view of first object in list
+                                                            NSLog(@"result found");
+                                                        }
+                                                        else{
+                                                            [query whereKey:@"secondIngred" equalTo:self.fourthIngred.text];
+                                                            results= [query findObjects];
+                                                            if (results.count > 0){
+                                                                // segue to detail view of first object in list
+                                                                NSLog(@"result found");
+                                                            }
+                                                            else{
+                                                                [query whereKey:@"thirdIngred" equalTo:self.fourthIngred.text];
+                                                                results= [query findObjects];
+                                                                if (results.count > 0){
+                                                                    // segue to detail view of first object in list
+                                                                    NSLog(@"result found");
+                                                                }
+                                                                else{
+                                                                    [query whereKey:@"fourthIngred" equalTo:self.fourthIngred.text];
+                                                                    results= [query findObjects];
+                                                                    if (results.count > 0){
+                                                                        // segue to detail view of first object in list
+                                                                        NSLog(@"result found");
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
 @end

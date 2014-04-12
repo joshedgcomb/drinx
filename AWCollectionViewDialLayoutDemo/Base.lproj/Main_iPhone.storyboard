@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Ingredients View Controller - Ingredients-->
@@ -118,6 +118,7 @@
                         <outlet property="thirdIngred" destination="V4b-Xa-Fc3" id="ewN-7o-Gef"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="favs" id="0t7-JI-Hj2"/>
                         <segue destination="2uJ-bj-Wc6" kind="modal" identifier="add" id="Foh-vY-24K"/>
+                        <segue destination="Vdf-f0-AY2" kind="modal" identifier="mixToDetail" id="P7h-l4-J6V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYR-uZ-awz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -490,5 +491,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="Gru-8y-ucB"/>
+        <segue reference="P7h-l4-J6V"/>
     </inferredMetricsTieBreakers>
 </document>

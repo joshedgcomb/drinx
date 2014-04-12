@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AlRadialMenu.h"
+#import <Parse/Parse.h>
 
 @interface IngredientsViewController : UIViewController
 
@@ -25,5 +26,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *secondIngred;
 @property (weak, nonatomic) IBOutlet UITextField *thirdIngred;
 @property (weak, nonatomic) IBOutlet UITextField *fourthIngred;
+@property PFObject *myDrink;
+
+- (IBAction)mix:(id)sender;
 
 @end
