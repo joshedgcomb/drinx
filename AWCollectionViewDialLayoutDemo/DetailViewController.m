@@ -110,4 +110,7 @@
         [fav saveInBackground];
     }
 }
+
+- (IBAction)goBack:(id)sender {
+}
 @end

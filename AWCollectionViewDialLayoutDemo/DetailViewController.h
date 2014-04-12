@@ -24,6 +24,7 @@
 @property float fff;
 - (IBAction)rate:(id)sender;
 - (IBAction)favorite:(id)sender;
+- (IBAction)goBack:(id)sender;
 
 
 @end
