@@ -209,7 +209,7 @@ static NSString *cellId2 = @"cellId2";
     NSMutableString *drinkText = [[currentDrink objectForKey:@"name"] mutableCopy];
     float scoreNum = [[currentDrink objectForKey:@"score"] floatValue];
     NSString *scoreString = [NSString stringWithFormat:@"%.1f", scoreNum];
-    NSString *dashString = @" - ";
+    NSString *dashString = @"  ";
     [drinkText appendString:dashString];
     [drinkText appendString:scoreString];
     
@@ -424,4 +424,6 @@ static NSString *cellId2 = @"cellId2";
 - (IBAction)backButton:(id)sender {
     [self performSegueWithIdentifier:@"fromFavs" sender:sender];
 }
+
+
 @end

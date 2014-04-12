@@ -137,4 +137,12 @@
 - (IBAction)backButton:(id)sender {
     [self performSegueWithIdentifier:@"fromNew" sender:sender];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"bonerSegue"])   {
+        
+    }
+}
+
 @end
