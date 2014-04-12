@@ -18,6 +18,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *fourthIngred;
 @property (strong, nonatomic) IBOutlet UISlider *tasteSlide;
 @property (strong, nonatomic) IBOutlet UISlider *freshSlide;
+@property PFObject *theDrink;
+@property NSArray *objects;
+@property float ttt;
+@property float fff;
 - (IBAction)rate:(id)sender;
 - (IBAction)favorite:(id)sender;
 

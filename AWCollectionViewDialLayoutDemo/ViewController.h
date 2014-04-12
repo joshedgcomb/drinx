@@ -21,5 +21,6 @@
 @property NSArray *items;
 @property NSString *viewTitle;
 @property NSInteger *numnum;
+@property NSIndexPath *myIndexPath;
 - (IBAction)backButton:(id)sender;
 @end

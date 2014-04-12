@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AWCollectionViewDialLayout.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -417,12 +418,22 @@ static NSString *cellId2 = @"cellId2";
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     [self performSegueWithIdentifier:@"bonerSegue" sender:self];
+    self.myIndexPath = indexPath;
 }
 
 
 
 - (IBAction)backButton:(id)sender {
     [self performSegueWithIdentifier:@"fromFavs" sender:sender];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"bonerSegue"])   {
+        DetailViewController *controller = [segue destinationViewController];
+        controller.theDrink = [allDrinks objectAtIndex:self.myIndexPath.item];
+        
+    }
 }
 
 

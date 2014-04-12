@@ -30,11 +30,11 @@
     PFQuery *query = [PFQuery queryWithClassName:@"Drink"];
     [query whereKey:@"name" equalTo:@"Hugo"];
    
-    NSArray *objects = [query findObjects];
+    self.objects = [[NSArray alloc] initWithObjects:self.theDrink, nil];
     // The find succeeded.
     NSLog(@"Successfully retrieved drink");
     // Do something with the found objects
-    for (PFObject *object in objects) {
+    for (PFObject *object in self.objects) {
         NSLog(@"%@", object.objectId);
         
         [self.name setText:[object objectForKey:@"name"]];
@@ -46,12 +46,12 @@
         
         NSNumber *taste = [object objectForKey:@"taste"];
         NSNumber *fresh = [object objectForKey:@"freshness"];
-        float ttt = [taste floatValue];
-        float fff = [fresh floatValue];
-        NSLog(@"taste: %f", ttt);
-        NSLog(@"fresh: %f", fff);
-        [self.tasteSlide setValue:ttt];
-        [self.freshSlide setValue:fff];
+        self.ttt = [taste floatValue];
+        self.fff = [fresh floatValue];
+        NSLog(@"taste: %f", self.ttt);
+        NSLog(@"fresh: %f", self.fff);
+        [self.tasteSlide setValue:self.ttt];
+        [self.freshSlide setValue:self.fff];
         
         PFFile *theImage = [object objectForKey:@"image"];
         NSData *imageData = [theImage getData];
@@ -75,22 +75,39 @@
 }
 
 - (IBAction)rate:(id)sender {
-    PFQuery *query = [PFQuery queryWithClassName:@"Drink"];
-    [query whereKey:@"name" equalTo:@"Hugo"];
     
-    NSArray *objects = [query findObjects];
     // The find succeeded.
     NSLog(@"Successfully retrieved drink");
     // Do something with the found objects
-    for (PFObject *object in objects) {
+    for (PFObject *object in self.objects) {
         NSLog(@"%@", object.objectId);
-        
-    NSNumber *score = [NSNumber numberWithFloat:self.tasteSlide.value + self.freshSlide.value];
-        
+        NSNumber *score = [NSNumber numberWithFloat:(self.tasteSlide.value+self.ttt)/2 + (self.freshSlide.value+self.fff)/2];
+        float scoreF = [score floatValue];
+        NSLog(@"%f", scoreF);
+        object[@"score"] = score;
+        [self.tasteSlide setValue:(self.tasteSlide.value+self.ttt)/2];
+        [self.freshSlide setValue:(self.freshSlide.value+self.fff)/2];
     }
 
 }
 
 - (IBAction)favorite:(id)sender {
+    for (PFObject *object in self.objects) {
+        NSLog(@"%@", object.objectId);
+        PFObject *fav = [PFObject objectWithClassName:@"Favorites"];
+        
+        fav[@"name"]=[object objectForKey:@"name"];
+        fav[@"firstIngred"]=[object objectForKey:@"firstIngred"];
+        fav[@"secondIngred"]=[object objectForKey:@"secondIngred"];
+        fav[@"thirdIngred"]=[object objectForKey:@"thirdIngred"];
+        fav[@"fourthIngred"]=[object objectForKey:@"fourthIngred"];
+        PFFile *theImage = [object objectForKey:@"image"];
+        [fav setObject:theImage forKey:@"image"];
+        fav[@"taste"] = [object objectForKey:@"taste"];
+        fav[@"freshness"] = [object objectForKey:@"freshness"];
+        fav[@"score"] = [object objectForKey:@"score"];
+        
+        [fav saveInBackground];
+    }
 }
 @end
