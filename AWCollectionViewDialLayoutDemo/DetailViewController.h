@@ -20,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet UISlider *freshSlide;
 - (IBAction)rate:(id)sender;
 - (IBAction)favorite:(id)sender;
+- (IBAction)goBack:(id)sender;
 
 
 @end
