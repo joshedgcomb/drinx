@@ -106,25 +106,6 @@
             </objects>
             <point key="canvasLocation" x="415" y="-191"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="0j6-sQ-YxD">
-            <objects>
-                <viewController id="kCW-lX-dJq" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KpB-1k-JFM"/>
-                        <viewControllerLayoutGuide type="bottom" id="3rW-K9-LLO"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="nAx-Hy-3GR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="9jf-Jn-BF3"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8gs-GS-07L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="664" y="289"/>
-        </scene>
         <!--New Drink View Controller-->
         <scene sceneID="9dl-hO-ImE">
             <objects>
