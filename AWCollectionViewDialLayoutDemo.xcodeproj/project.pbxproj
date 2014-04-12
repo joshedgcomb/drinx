@@ -22,7 +22,7 @@
 		0BDEF05218F9302500989B1E /* minusbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF05118F9302500989B1E /* minusbutton.png */; };
 		0BDEF05618F9435C00989B1E /* backarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF05518F9435C00989B1E /* backarrow.png */; };
 		0BDEF05818F9502600989B1E /* menubutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF05718F9502600989B1E /* menubutton.png */; };
-		0BDEF05C18F9548100989B1E /* addpicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF05B18F9548100989B1E /* addpicture.png */; };
+		0BDEF06A18F9584300989B1E /* addpicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF06918F9584300989B1E /* addpicture.png */; };
 		71D04A0818D3068F0077B38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0718D3068F0077B38B /* Foundation.framework */; };
 		71D04A0A18D3068F0077B38B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0918D3068F0077B38B /* CoreGraphics.framework */; };
 		71D04A0C18D3068F0077B38B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0B18D3068F0077B38B /* UIKit.framework */; };
@@ -95,7 +95,7 @@
 		0BDEF05118F9302500989B1E /* minusbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minusbutton.png; sourceTree = "<group>"; };
 		0BDEF05518F9435C00989B1E /* backarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backarrow.png; sourceTree = "<group>"; };
 		0BDEF05718F9502600989B1E /* menubutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubutton.png; sourceTree = "<group>"; };
-		0BDEF05B18F9548100989B1E /* addpicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addpicture.png; sourceTree = "<group>"; };
+		0BDEF06918F9584300989B1E /* addpicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addpicture.png; sourceTree = "<group>"; };
 		71D04A0418D3068F0077B38B /* AWCollectionViewDialLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWCollectionViewDialLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D04A0718D3068F0077B38B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71D04A0918D3068F0077B38B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -184,8 +184,8 @@
 				0BDEF04318F91D9500989B1E /* Share Images */,
 				0BDEF04C18F9243900989B1E /* addthis500.2.png */,
 				0BDEF05518F9435C00989B1E /* backarrow.png */,
-				0BDEF05B18F9548100989B1E /* addpicture.png */,
 				0BDEF05718F9502600989B1E /* menubutton.png */,
+				0BDEF06918F9584300989B1E /* addpicture.png */,
 				0BDEF05118F9302500989B1E /* minusbutton.png */,
 				0BDEF02518F90E8A00989B1E /* drinksbutton.png */,
 				0BDEF02718F90E8A00989B1E /* favoritesbutton.png */,
@@ -430,7 +430,7 @@
 				0BDEF05218F9302500989B1E /* minusbutton.png in Resources */,
 				0BDEF05618F9435C00989B1E /* backarrow.png in Resources */,
 				0BDEF03818F911D700989B1E /* addthis500.png in Resources */,
-				0BDEF05C18F9548100989B1E /* addpicture.png in Resources */,
+				0BDEF06A18F9584300989B1E /* addpicture.png in Resources */,
 				71D04A5318D315980077B38B /* james_harden.png in Resources */,
 				71D04A4418D309C40077B38B /* dialCell.xib in Resources */,
 				71D04A4E18D3114C0077B38B /* dwayne_wade.png in Resources */,
