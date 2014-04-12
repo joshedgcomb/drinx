@@ -8,6 +8,7 @@
 
 #import "IngredientsViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "ViewController.h"
 
 @interface IngredientsViewController ()
 
@@ -53,46 +54,6 @@
     [self.thirdIngred resignFirstResponder];
     [self.fourthIngred resignFirstResponder];
     return YES;
-}
-
-- (IBAction)removeIngred:(id)sender {
-    NSLog(@"remove");
-    if (self.fourthIngred.isHidden == FALSE) {
-        [self.fourthIngred setText:nil];
-        [self.fourthIngred setHidden:TRUE];
-        NSLog(@"4");
-        NSLog(self.fourthIngred.isHidden ? @"Yes": @"No");
-    }
-    else if (self.thirdIngred.isHidden == FALSE){
-        [self.thirdIngred setText:nil];
-        [self.thirdIngred setHidden:TRUE];
-        NSLog(@"3");
-    }
-    else if (self.secondIngred.isHidden == FALSE){
-        [self.secondIngred setText:nil];
-        [self.secondIngred setHidden:TRUE];
-        [self.removeButton setHidden:TRUE];
-        NSLog(@"2");
-    }
-}
-
-- (IBAction)addIngred:(id)sender {
-    NSLog(@"add");
-    if (self.secondIngred.isHidden == TRUE) {
-        [self.secondIngred setHidden:FALSE];
-        [self.removeButton setHidden:FALSE];
-    }
-    else if (self.thirdIngred.isHidden == TRUE){
-        [self.thirdIngred setHidden:FALSE];
-    }
-    else if (self.fourthIngred.isHidden == TRUE){
-        [self.fourthIngred setHidden:FALSE];
-    }
-    else {
-        UIAlertView *alert = [[UIAlertView alloc]
-                              initWithTitle:@"Slow Down!" message:@"Let's keep it to four ingredients, eh?" delegate:nil cancelButtonTitle:@"Ugh, fine" otherButtonTitles:nil, nil];
-        [alert show];
-    }
 }
 
 /*
@@ -188,8 +149,44 @@
 
 
 - (IBAction)addIngred:(id)sender {
+    NSLog(@"add");
+    if (self.secondIngred.isHidden == TRUE) {
+        [self.secondIngred setHidden:FALSE];
+        [self.removeButton setHidden:FALSE];
+    }
+    else if (self.thirdIngred.isHidden == TRUE){
+        [self.thirdIngred setHidden:FALSE];
+    }
+    else if (self.fourthIngred.isHidden == TRUE){
+        [self.fourthIngred setHidden:FALSE];
+    }
+    else {
+        UIAlertView *alert = [[UIAlertView alloc]
+                              initWithTitle:@"Slow Down!" message:@"Let's keep it to four ingredients, eh?" delegate:nil cancelButtonTitle:@"Ugh, fine" otherButtonTitles:nil, nil];
+        [alert show];
+    }
 }
 
 - (IBAction)removeIngred:(id)sender {
+    NSLog(@"remove");
+    if (self.fourthIngred.isHidden == FALSE) {
+        [self.fourthIngred setText:nil];
+        [self.fourthIngred setHidden:TRUE];
+        NSLog(@"4");
+        NSLog(self.fourthIngred.isHidden ? @"Yes": @"No");
+    }
+    else if (self.thirdIngred.isHidden == FALSE){
+        [self.thirdIngred setText:nil];
+        [self.thirdIngred setHidden:TRUE];
+        NSLog(@"3");
+    }
+    else if (self.secondIngred.isHidden == FALSE){
+        [self.secondIngred setText:nil];
+        [self.secondIngred setHidden:TRUE];
+        [self.removeButton setHidden:TRUE];
+        NSLog(@"2");
+    }
 }
+
+
 @end
