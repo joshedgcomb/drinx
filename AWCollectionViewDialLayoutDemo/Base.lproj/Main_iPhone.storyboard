@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Ingredients View Controller - Ingredients-->
@@ -283,22 +283,6 @@
                                     <action selector="removeIngred:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="HXc-yc-bLZ"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="29o-wK-HSy">
-                                <rect key="frame" x="15" y="58" width="94" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99068558042071897" blue="0.25990500787382564" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lLe-zD-IEf">
-                                <rect key="frame" x="15" y="61" width="93" height="93"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+" image="addpicture.png">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="chooseImage:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="2UQ-zG-9Xd"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taste" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jHh-ln-AUf">
                                 <rect key="frame" x="20" y="323" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -323,6 +307,20 @@
                                     <action selector="backButton:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="Zfm-JV-vu2"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2vL-yb-A8K">
+                                <rect key="frame" x="8" y="57" width="101" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O3G-Fa-syf">
+                                <rect key="frame" x="172" y="55" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="add image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseImage:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="OAL-c2-E2H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45485154589999999" green="0.86284279340000003" blue="0.84198526959999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -331,7 +329,7 @@
                         <outlet property="firstIng" destination="pbH-r5-F61" id="GGb-oP-t4l"/>
                         <outlet property="fourthIng" destination="Iad-Pf-QHr" id="WUB-79-9Vx"/>
                         <outlet property="freshness" destination="OTI-3R-Z0T" id="AnP-MQ-PCm"/>
-                        <outlet property="imageView" destination="29o-wK-HSy" id="Eo2-vB-EJF"/>
+                        <outlet property="imageView" destination="2vL-yb-A8K" id="F7B-Qq-T1Y"/>
                         <outlet property="removeButton" destination="w5l-IC-hHg" id="S3n-Tk-D3A"/>
                         <outlet property="secondIng" destination="rYa-oc-bwE" id="BaR-ms-qn2"/>
                         <outlet property="taste" destination="6tZ-iL-Qmf" id="clP-Jr-XfE"/>
@@ -462,9 +460,21 @@
             </objects>
             <point key="canvasLocation" x="625" y="898"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="8wm-Je-muA">
+            <objects>
+                <viewController id="7Ce-YR-2yK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XOa-us-Jn2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fg1-7k-X61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
     </scenes>
     <resources>
-        <image name="addpicture.png" width="500" height="500"/>
         <image name="addthis500.2.png" width="500" height="500"/>
         <image name="backarrow.png" width="500" height="500"/>
         <image name="favoritesbutton.png" width="500" height="500"/>
@@ -477,6 +487,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="lnr-ft-gPx"/>
+        <segue reference="On6-X1-xqk"/>
     </inferredMetricsTieBreakers>
 </document>
