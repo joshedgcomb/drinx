@@ -24,7 +24,7 @@
 		71D04A3618D3068F0077B38B /* drinxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D04A3518D3068F0077B38B /* drinxTests.m */; };
 		71D04A4218D306A30077B38B /* AWCollectionViewDialLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 71D04A4118D306A30077B38B /* AWCollectionViewDialLayout.m */; };
 		71D04A4418D309C40077B38B /* dialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71D04A4318D309C40077B38B /* dialCell.xib */; };
-		71D04A4618D311190077B38B /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = 71D04A4518D311190077B38B /* players.json */; };
+		71D04A4618D311190077B38B /* drinks.json in Resources */ = {isa = PBXBuildFile; fileRef = 71D04A4518D311190077B38B /* drinks.json */; };
 		71D04A4D18D3114C0077B38B /* carmelo_anthony.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D04A4818D3114C0077B38B /* carmelo_anthony.png */; };
 		71D04A4E18D3114C0077B38B /* dwayne_wade.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D04A4918D3114C0077B38B /* dwayne_wade.png */; };
 		71D04A4F18D3114C0077B38B /* kyrie_irving.png in Resources */ = {isa = PBXBuildFile; fileRef = 71D04A4A18D3114C0077B38B /* kyrie_irving.png */; };
@@ -36,6 +36,8 @@
 		71DD223918D879A1005450FA /* dialCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71DD223818D879A1005450FA /* dialCell2.xib */; };
 		71DD223C18D885F3005450FA /* awcollectionviewdiallayout_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71DD223A18D885F3005450FA /* awcollectionviewdiallayout_1.jpg */; };
 		71DD223D18D885F3005450FA /* awcollectionviewdiallayout_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71DD223B18D885F3005450FA /* awcollectionviewdiallayout_2.jpg */; };
+		DA89B75518F8F5F700C051C1 /* strawberry_margarita.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA89B75418F8F5F700C051C1 /* strawberry_margarita.jpg */; };
+		DA89B75718F8FFDE00C051C1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89B75618F8FFDE00C051C1 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +74,7 @@
 		71D04A4018D306A30077B38B /* AWCollectionViewDialLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCollectionViewDialLayout.h; sourceTree = "<group>"; };
 		71D04A4118D306A30077B38B /* AWCollectionViewDialLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCollectionViewDialLayout.m; sourceTree = "<group>"; };
 		71D04A4318D309C40077B38B /* dialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell.xib; sourceTree = "<group>"; };
-		71D04A4518D311190077B38B /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
+		71D04A4518D311190077B38B /* drinks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = drinks.json; sourceTree = "<group>"; };
 		71D04A4818D3114C0077B38B /* carmelo_anthony.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carmelo_anthony.png; sourceTree = "<group>"; };
 		71D04A4918D3114C0077B38B /* dwayne_wade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dwayne_wade.png; sourceTree = "<group>"; };
 		71D04A4A18D3114C0077B38B /* kyrie_irving.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kyrie_irving.png; sourceTree = "<group>"; };
@@ -84,6 +86,8 @@
 		71DD223818D879A1005450FA /* dialCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dialCell2.xib; sourceTree = "<group>"; };
 		71DD223A18D885F3005450FA /* awcollectionviewdiallayout_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = awcollectionviewdiallayout_1.jpg; sourceTree = "<group>"; };
 		71DD223B18D885F3005450FA /* awcollectionviewdiallayout_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = awcollectionviewdiallayout_2.jpg; sourceTree = "<group>"; };
+		DA89B75418F8F5F700C051C1 /* strawberry_margarita.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = strawberry_margarita.jpg; sourceTree = "<group>"; };
+		DA89B75618F8FFDE00C051C1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			files = (
 				71D04A0A18D3068F0077B38B /* CoreGraphics.framework in Frameworks */,
 				71D04A0C18D3068F0077B38B /* UIKit.framework in Frameworks */,
+				DA89B75718F8FFDE00C051C1 /* Parse.framework in Frameworks */,
 				71D04A0818D3068F0077B38B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +137,7 @@
 		71D04A0618D3068F0077B38B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA89B75618F8FFDE00C051C1 /* Parse.framework */,
 				71D04A0718D3068F0077B38B /* Foundation.framework */,
 				71D04A0918D3068F0077B38B /* CoreGraphics.framework */,
 				71D04A0B18D3068F0077B38B /* UIKit.framework */,
@@ -153,7 +159,7 @@
 				71D04A2018D3068F0077B38B /* ViewController.m */,
 				71D04A4318D309C40077B38B /* dialCell.xib */,
 				71DD223818D879A1005450FA /* dialCell2.xib */,
-				71D04A4518D311190077B38B /* players.json */,
+				71D04A4518D311190077B38B /* drinks.json */,
 				71D04A2218D3068F0077B38B /* Images.xcassets */,
 				71D04A0E18D3068F0077B38B /* Supporting Files */,
 				71DD0C6318D3540400152D0C /* iphone_settings_view.xib */,
@@ -204,6 +210,7 @@
 		71D04A4718D311340077B38B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				DA89B75418F8F5F700C051C1 /* strawberry_margarita.jpg */,
 				71DD223A18D885F3005450FA /* awcollectionviewdiallayout_1.jpg */,
 				71DD223B18D885F3005450FA /* awcollectionviewdiallayout_2.jpg */,
 				71D04A4818D3114C0077B38B /* carmelo_anthony.png */,
@@ -303,13 +310,14 @@
 				71D04A5318D315980077B38B /* james_harden.png in Resources */,
 				71D04A4418D309C40077B38B /* dialCell.xib in Resources */,
 				71D04A4E18D3114C0077B38B /* dwayne_wade.png in Resources */,
-				71D04A4618D311190077B38B /* players.json in Resources */,
+				71D04A4618D311190077B38B /* drinks.json in Resources */,
 				71D04A2318D3068F0077B38B /* Images.xcassets in Resources */,
 				71DD223918D879A1005450FA /* dialCell2.xib in Resources */,
 				71DD223C18D885F3005450FA /* awcollectionviewdiallayout_1.jpg in Resources */,
 				71D04A1B18D3068F0077B38B /* Main_iPhone.storyboard in Resources */,
 				71D04A4D18D3114C0077B38B /* carmelo_anthony.png in Resources */,
 				71D04A1218D3068F0077B38B /* InfoPlist.strings in Resources */,
+				DA89B75518F8F5F700C051C1 /* strawberry_margarita.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,6 +475,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jarthurcs/Desktop/drinx/drinx,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWCollectionViewDialLayoutDemo/AWCollectionViewDialLayoutDemo-Prefix.pch";
 				INFOPLIST_FILE = "AWCollectionViewDialLayoutDemo/AWCollectionViewDialLayoutDemo-Info.plist";
@@ -484,6 +496,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/jarthurcs/Desktop/drinx/drinx,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWCollectionViewDialLayoutDemo/AWCollectionViewDialLayoutDemo-Prefix.pch";
 				INFOPLIST_FILE = "AWCollectionViewDialLayoutDemo/AWCollectionViewDialLayoutDemo-Info.plist";

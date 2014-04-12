@@ -46,7 +46,7 @@ static NSString *cellId2 = @"cellId2";
     
     
     NSError *error;
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"players" ofType:@"json"];
+    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"drinks" ofType:@"json"];
     NSString *jsonString = [[NSString alloc] initWithContentsOfFile:jsonPath encoding:NSUTF8StringEncoding error:NULL];
     NSLog(@"jsonString:%@",jsonString);
     items = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
