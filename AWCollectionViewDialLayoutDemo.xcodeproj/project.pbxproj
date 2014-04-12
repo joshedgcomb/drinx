@@ -513,7 +513,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jarthurcs/Desktop/drinx/drinx,
+					"$(SRCROOT)/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWCollectionViewDialLayoutDemo/AWCollectionViewDialLayoutDemo-Prefix.pch";
@@ -534,7 +534,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jarthurcs/Desktop/drinx/drinx,
+					"$(SRCROOT)/**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWCollectionViewDialLayoutDemo/AWCollectionViewDialLayoutDemo-Prefix.pch";
