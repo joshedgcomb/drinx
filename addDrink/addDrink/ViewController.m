@@ -106,20 +106,31 @@
 
 - (IBAction)addToParse:(id)sender {
     PFObject *drink = [PFObject objectWithClassName:@"Drink"];
-    NSString *name = [NSString stringWithFormat:self.drinkName.text];
-    float taste = [self.taste value];
-    float freshness = [self.freshness value];
-    NSNumber *tasteNum = [NSNumber numberWithFloat:taste];
-    NSNumber *freshNum = [NSNumber numberWithFloat:freshness];
+    //NSString *name = [NSString stringWithFormat:self.drinkName.text];
+    //float taste = [self.taste value];
+    //float freshness = [self.freshness value];
+    //NSNumber *tasteNum = [NSNumber numberWithFloat:taste];
+    //NSNumber *freshNum = [NSNumber numberWithFloat:freshness];
     
-    
+    NSLog([NSString stringWithFormat:self.drinkName.text]);
     
     drink[@"name"] = [NSString stringWithFormat:self.drinkName.text];
-    drink[@"firstIngred"] = ingredients;
-    drink[@"image"] = self.drinkImage.image;
+    drink[@"firstIngred"] = [NSString stringWithFormat:self.firstIng.text];
+    drink[@"secondIngred"] = [NSString stringWithFormat:self.secondIng.text];
+    drink[@"thirdIngred"] = [NSString stringWithFormat:self.thirdIng.text];
+    drink[@"fourthIngred"] = [NSString stringWithFormat:self.fourthIng.text];
+    
+    //NSLog(@"up to image");
+    //drink[@"image"] = self.drinkImage.image;
+    //NSLog(@"after image");
+    
+    NSData *imageData = UIImageJPEGRepresentation(self.drinkImage.image, 0.8);
+    NSString *filename = [NSString stringWithFormat:@"%@.png", self.drinkName.text];
+    PFFile *imageFile = [PFFile fileWithName:filename data:imageData];
+    [drink setObject:imageFile forKey:@"image"];
     drink[@"taste"] = [NSNumber numberWithFloat:self.taste.value];
     drink[@"freshness"] = [NSNumber numberWithFloat:self.taste.value];
     
-    //[drink saveInBackground];
+    [drink saveInBackground];
 }
 @end
