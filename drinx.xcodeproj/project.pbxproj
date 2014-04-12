@@ -19,6 +19,7 @@
 		DA89B71A18F8E6AD00C051C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89B70218F8E6AD00C051C1 /* UIKit.framework */; };
 		DA89B72218F8E6AD00C051C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA89B72018F8E6AD00C051C1 /* InfoPlist.strings */; };
 		DA89B72418F8E6AD00C051C1 /* drinxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89B72318F8E6AD00C051C1 /* drinxTests.m */; };
+		DA89B72F18F8E86200C051C1 /* AWCollectionViewDialLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89B72E18F8E86200C051C1 /* AWCollectionViewDialLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		DA89B71F18F8E6AD00C051C1 /* drinxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "drinxTests-Info.plist"; sourceTree = "<group>"; };
 		DA89B72118F8E6AD00C051C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DA89B72318F8E6AD00C051C1 /* drinxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drinxTests.m; sourceTree = "<group>"; };
+		DA89B72D18F8E86200C051C1 /* AWCollectionViewDialLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCollectionViewDialLayout.h; sourceTree = "<group>"; };
+		DA89B72E18F8E86200C051C1 /* AWCollectionViewDialLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCollectionViewDialLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 		DA89B70418F8E6AD00C051C1 /* drinx */ = {
 			isa = PBXGroup;
 			children = (
+				DA89B72D18F8E86200C051C1 /* AWCollectionViewDialLayout.h */,
+				DA89B72E18F8E86200C051C1 /* AWCollectionViewDialLayout.m */,
 				DA89B70D18F8E6AD00C051C1 /* AppDelegate.h */,
 				DA89B70E18F8E6AD00C051C1 /* AppDelegate.m */,
 				DA89B71018F8E6AD00C051C1 /* Images.xcassets */,
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA89B72F18F8E86200C051C1 /* AWCollectionViewDialLayout.m in Sources */,
 				DA89B70F18F8E6AD00C051C1 /* AppDelegate.m in Sources */,
 				DA89B70B18F8E6AD00C051C1 /* main.m in Sources */,
 			);
