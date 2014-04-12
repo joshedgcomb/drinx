@@ -16,10 +16,12 @@
 @property (strong, nonatomic) IBOutlet UITextField *secondIng;
 @property (strong, nonatomic) IBOutlet UITextField *thirdIng;
 @property (strong, nonatomic) IBOutlet UITextField *fourthIng;
-@property (strong, nonatomic) IBOutlet UIImageView *drinkImage;
 @property (strong, nonatomic) IBOutlet UISlider *taste;
 @property (strong, nonatomic) IBOutlet UISlider *freshness;
 @property (strong, nonatomic) IBOutlet UIButton *removeButton;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) UIImage *chosenImage;
+@property (strong, nonatomic) UIImagePickerController *imagePicker;
 
 - (IBAction)removeIngred:(id)sender;
 

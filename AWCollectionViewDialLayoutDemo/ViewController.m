@@ -417,8 +417,8 @@ static NSString *cellId2 = @"cellId2";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"bonerSegue" sender:self];
     self.myIndexPath = indexPath;
+    [self performSegueWithIdentifier:@"bonerSegue" sender:self];
 }
 
 

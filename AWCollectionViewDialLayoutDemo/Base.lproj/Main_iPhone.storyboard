@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Ingredients View Controller - Ingredients-->
@@ -283,6 +283,11 @@
                                     <action selector="removeIngred:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="HXc-yc-bLZ"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="29o-wK-HSy">
+                                <rect key="frame" x="15" y="58" width="94" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.99068558042071897" blue="0.25990500787382564" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lLe-zD-IEf">
                                 <rect key="frame" x="15" y="61" width="93" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -291,14 +296,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addImage:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="9oz-Ez-AhE"/>
+                                    <action selector="chooseImage:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="2UQ-zG-9Xd"/>
                                 </connections>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="29o-wK-HSy">
-                                <rect key="frame" x="15" y="58" width="94" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.99068558042071897" blue="0.25990500787382564" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taste" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jHh-ln-AUf">
                                 <rect key="frame" x="20" y="323" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -327,11 +327,11 @@
                         <color key="backgroundColor" red="0.45485154589999999" green="0.86284279340000003" blue="0.84198526959999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
-                        <outlet property="drinkImage" destination="29o-wK-HSy" id="Nig-Qa-dC7"/>
                         <outlet property="drinkName" destination="zZO-ar-tRx" id="aDw-wp-Ry4"/>
                         <outlet property="firstIng" destination="pbH-r5-F61" id="GGb-oP-t4l"/>
                         <outlet property="fourthIng" destination="Iad-Pf-QHr" id="WUB-79-9Vx"/>
                         <outlet property="freshness" destination="OTI-3R-Z0T" id="AnP-MQ-PCm"/>
+                        <outlet property="imageView" destination="29o-wK-HSy" id="Eo2-vB-EJF"/>
                         <outlet property="removeButton" destination="w5l-IC-hHg" id="S3n-Tk-D3A"/>
                         <outlet property="secondIng" destination="rYa-oc-bwE" id="BaR-ms-qn2"/>
                         <outlet property="taste" destination="6tZ-iL-Qmf" id="clP-Jr-XfE"/>
@@ -477,6 +477,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="On6-X1-xqk"/>
+        <segue reference="lnr-ft-gPx"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -63,26 +63,23 @@
     }
 }
 
-- (IBAction)addImage:(id)sender {
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-    
-    [self presentViewController:picker animated:YES completion:NULL];
+- (IBAction)chooseImage:(id)sender {
+	self.imagePicker = [[UIImagePickerController alloc] init];
+	self.imagePicker.delegate = self;
+	[self.imagePicker setSourceType: (UIImagePickerControllerSourceTypePhotoLibrary)];
+	[self presentViewController: self.imagePicker animated:YES completion:nil];
 }
-
--(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:    (NSDictionary *)info {
-    
-    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    [self.drinkImage setImage:image];
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    [self dismissViewControllerAnimated:YES completion:^{}];
+	self.chosenImage = info[UIImagePickerControllerOriginalImage];
+	[self.imageView setImage:self.chosenImage];
+	self.imageView.layer.cornerRadius = 50;
+	self.imageView.layer.masksToBounds = YES;
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)addIngred:(id)sender {
@@ -124,7 +121,7 @@
     //drink[@"image"] = self.drinkImage.image;
     //NSLog(@"after image");
     
-    NSData *imageData = UIImageJPEGRepresentation(self.drinkImage.image, 0.8);
+    NSData *imageData = UIImageJPEGRepresentation(self.imageView.image, 0.8);
     NSString *filename = [NSString stringWithFormat:@"%@.png", self.drinkName.text];
     PFFile *imageFile = [PFFile fileWithName:filename data:imageData];
     [drink setObject:imageFile forKey:@"image"];

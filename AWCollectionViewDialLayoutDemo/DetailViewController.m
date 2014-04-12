@@ -27,8 +27,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    PFQuery *query = [PFQuery queryWithClassName:@"Drink"];
-    [query whereKey:@"name" equalTo:@"Hugo"];
+    //PFQuery *query = [PFQuery queryWithClassName:@"Drink"];
+    //[query whereKey:@"name" equalTo:@"Hugo"];
    
     self.objects = [[NSArray alloc] initWithObjects:self.theDrink, nil];
     // The find succeeded.
