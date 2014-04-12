@@ -74,7 +74,7 @@
 
 - (NSInteger) arcRadiusForRadialMenu:(ALRadialMenu *)radialMenu {
 	if (radialMenu == self.cornerMenu) {
-		return 60;
+		return 50;
 	}
 	
 	return 0;

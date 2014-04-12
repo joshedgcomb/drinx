@@ -14,6 +14,10 @@
 		0BDEF03818F911D700989B1E /* addthis500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF03718F911D700989B1E /* addthis500.png */; };
 		0BDEF03D18F911F900989B1E /* ALRadialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEF03A18F911F900989B1E /* ALRadialButton.m */; };
 		0BDEF03E18F911F900989B1E /* ALRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEF03C18F911F900989B1E /* ALRadialMenu.m */; };
+		0BDEF04518F91DAB00989B1E /* sharethis.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04418F91DAB00989B1E /* sharethis.png */; };
+		0BDEF04718F91DB500989B1E /* facebook500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04618F91DB500989B1E /* facebook500.png */; };
+		0BDEF04918F91DC900989B1E /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04818F91DC900989B1E /* twitter.png */; };
+		0BDEF04B18F91DF100989B1E /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04A18F91DF100989B1E /* pinterest.png */; };
 		71D04A0818D3068F0077B38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0718D3068F0077B38B /* Foundation.framework */; };
 		71D04A0A18D3068F0077B38B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0918D3068F0077B38B /* CoreGraphics.framework */; };
 		71D04A0C18D3068F0077B38B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0B18D3068F0077B38B /* UIKit.framework */; };
@@ -76,6 +80,10 @@
 		0BDEF03A18F911F900989B1E /* ALRadialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialButton.m; sourceTree = "<group>"; };
 		0BDEF03B18F911F900989B1E /* ALRadialMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialMenu.h; sourceTree = "<group>"; };
 		0BDEF03C18F911F900989B1E /* ALRadialMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialMenu.m; sourceTree = "<group>"; };
+		0BDEF04418F91DAB00989B1E /* sharethis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharethis.png; sourceTree = "<group>"; };
+		0BDEF04618F91DB500989B1E /* facebook500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook500.png; sourceTree = "<group>"; };
+		0BDEF04818F91DC900989B1E /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		0BDEF04A18F91DF100989B1E /* pinterest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterest.png; sourceTree = "<group>"; };
 		71D04A0418D3068F0077B38B /* AWCollectionViewDialLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWCollectionViewDialLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D04A0718D3068F0077B38B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71D04A0918D3068F0077B38B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -179,6 +187,17 @@
 			name = ALRadial;
 			sourceTree = "<group>";
 		};
+		0BDEF04318F91D9500989B1E /* Share Images */ = {
+			isa = PBXGroup;
+			children = (
+				0BDEF04818F91DC900989B1E /* twitter.png */,
+				0BDEF04A18F91DF100989B1E /* pinterest.png */,
+				0BDEF04618F91DB500989B1E /* facebook500.png */,
+				0BDEF04418F91DAB00989B1E /* sharethis.png */,
+			);
+			name = "Share Images";
+			sourceTree = "<group>";
+		};
 		71D049FB18D3068F0077B38B = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +241,7 @@
 		71D04A0D18D3068F0077B38B /* drinx */ = {
 			isa = PBXGroup;
 			children = (
+				0BDEF04318F91D9500989B1E /* Share Images */,
 				0BDEF03F18F911FF00989B1E /* ALRadial */,
 				0BDEF02218F90E6700989B1E /* Menu Images */,
 				71D04A4718D311340077B38B /* Assets */,
@@ -376,13 +396,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BDEF04718F91DB500989B1E /* facebook500.png in Resources */,
 				71DD0C6218D31DD900152D0C /* kevin_durant.png in Resources */,
 				71D04A5118D3114C0077B38B /* paul_george.png in Resources */,
 				71DD223D18D885F3005450FA /* awcollectionviewdiallayout_2.jpg in Resources */,
+				0BDEF04B18F91DF100989B1E /* pinterest.png in Resources */,
+				0BDEF04518F91DAB00989B1E /* sharethis.png in Resources */,
 				71D04A4F18D3114C0077B38B /* kyrie_irving.png in Resources */,
 				0BDEF02918F90E8A00989B1E /* menubutton.png in Resources */,
 				71DD0C6418D3540400152D0C /* iphone_settings_view.xib in Resources */,
 				71D04A5018D3114C0077B38B /* lebron_james.png in Resources */,
+				0BDEF04918F91DC900989B1E /* twitter.png in Resources */,
 				0BDEF03818F911D700989B1E /* addthis500.png in Resources */,
 				71D04A5318D315980077B38B /* james_harden.png in Resources */,
 				71D04A4418D309C40077B38B /* dialCell.xib in Resources */,
