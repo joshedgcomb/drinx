@@ -75,10 +75,14 @@ static NSString *cellId2 = @"cellId2";
     [collectionView setCollectionViewLayout:dialLayout];
 
     [editBtn setTarget:self];
-    [editBtn setAction:@selector(toggleSettingsView)];
+    [editBtn setAction:@selector(goBack:)];
     
     [self switchExample];
     
+}
+
+-(IBAction)goBack:(id)sender    {
+    [self performSegueWithIdentifier:@"backFromFavorites" sender:self];
 }
 
 -(void)buildSettings{
@@ -180,7 +184,7 @@ static NSString *cellId2 = @"cellId2";
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.items.count;
+    return allDrinks.count;
 }
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
@@ -201,9 +205,10 @@ static NSString *cellId2 = @"cellId2";
     
     NSDictionary *item = [self.items objectAtIndex:indexPath.item];
     
-    NSString *playerName = [item valueForKey:@"name"];
+    //NSString *playerName = [item valueForKey:@"name"];
     UILabel *nameLabel = (UILabel*)[cell viewWithTag:101];
-    [nameLabel setText:playerName];
+    PFObject* currentDrink = [allDrinks objectAtIndex:indexPath.item];
+    [nameLabel setText:[currentDrink objectForKey:@"name"]];
     
     
     NSString *hexColor = [item valueForKey:@"team-color"];
@@ -220,7 +225,7 @@ static NSString *cellId2 = @"cellId2";
         NSString *imgURL = [item valueForKey:@"picture"];
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
         [imgView setImage:nil];
-        UIImage *imageProduct = [UIImage imageNamed:@"default.jpg"];
+        UIImage *imageProduct = [myImages objectAtIndex:indexPath.item];
         if(imageProduct){
             imgView.image = imageProduct;
         }

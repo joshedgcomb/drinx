@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tVb-ED-Uae">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tVb-ED-Uae">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Ingredients View Controller - Ingredients-->
@@ -76,8 +76,8 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="ALL-STAR GAME ROSTERS" id="D58-ao-gGM">
-                                        <barButtonItem key="rightBarButtonItem" title="Edit" style="plain" id="GMJ-pP-5Mf">
+                                    <navigationItem title="Favorite Drinks" id="D58-ao-gGM">
+                                        <barButtonItem key="rightBarButtonItem" title="Back" style="plain" id="GMJ-pP-5Mf">
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </barButtonItem>
                                     </navigationItem>
@@ -98,11 +98,12 @@
                         <outlet property="collectionView" destination="9M6-aW-M6X" id="Ixx-GR-ka1"/>
                         <outlet property="editBtn" destination="GMJ-pP-5Mf" id="U8V-dH-Pro"/>
                         <segue destination="kCW-lX-dJq" kind="modal" identifier="bonerSegue" id="P8y-8Y-GZf"/>
+                        <segue destination="tVb-ED-Uae" kind="modal" identifier="backFromFavorites" id="lnr-ft-gPx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="337" y="-65"/>
+            <point key="canvasLocation" x="415" y="-191"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0j6-sQ-YxD">
