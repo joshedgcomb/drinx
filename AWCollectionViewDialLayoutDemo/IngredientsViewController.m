@@ -26,6 +26,16 @@
     return self;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    //NSLog(@"You entered %@",self.drinkName.text);
+    [self.firstIngred resignFirstResponder];
+    [self.secondIngred resignFirstResponder];
+    [self.thirdIngred resignFirstResponder];
+    [self.fourthIngred resignFirstResponder];
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
