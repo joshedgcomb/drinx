@@ -29,7 +29,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add Ingredient" placeholder="First Ingredient" textAlignment="center" minimumFontSize="17" id="aPB-cZ-507">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingridient" textAlignment="center" minimumFontSize="17" id="aPB-cZ-507">
                                 <rect key="frame" x="48" y="194" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -40,7 +40,7 @@
                                     <outlet property="delegate" destination="2uJ-bj-Wc6" id="v9l-5S-5gB"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add Ingredient" placeholder="Second Ingredient" textAlignment="center" minimumFontSize="17" id="g5O-Mj-JN3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingridient" textAlignment="center" minimumFontSize="17" id="g5O-Mj-JN3">
                                 <rect key="frame" x="48" y="228" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,7 +51,7 @@
                                     <outlet property="delegate" destination="2uJ-bj-Wc6" id="WyQ-Ng-wvG"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add Ingredient" placeholder="Third Ingredient" textAlignment="center" minimumFontSize="17" id="V4b-Xa-Fc3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingridient" textAlignment="center" minimumFontSize="17" id="V4b-Xa-Fc3">
                                 <rect key="frame" x="48" y="262" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,7 +62,7 @@
                                     <outlet property="delegate" destination="2uJ-bj-Wc6" id="IKz-PX-c9T"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add Ingredient" placeholder="Fourth Ingredient" textAlignment="center" minimumFontSize="17" id="kSD-XT-hw7">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingridient" textAlignment="center" minimumFontSize="17" id="kSD-XT-hw7">
                                 <rect key="frame" x="48" y="296" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
