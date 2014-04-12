@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Ingredients View Controller - Ingredients-->
@@ -98,7 +98,6 @@
                     <connections>
                         <outlet property="collectionView" destination="9M6-aW-M6X" id="Ixx-GR-ka1"/>
                         <outlet property="editBtn" destination="GMJ-pP-5Mf" id="U8V-dH-Pro"/>
-                        <segue destination="kCW-lX-dJq" kind="modal" identifier="bonerSegue" id="P8y-8Y-GZf"/>
                         <segue destination="tVb-ED-Uae" kind="modal" identifier="backFromFavorites" id="lnr-ft-gPx"/>
                     </connections>
                 </viewController>
@@ -282,4 +281,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="lnr-ft-gPx"/>
+    </inferredMetricsTieBreakers>
 </document>
