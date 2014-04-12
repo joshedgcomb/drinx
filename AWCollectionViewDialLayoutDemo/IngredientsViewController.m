@@ -8,6 +8,7 @@
 
 #import "IngredientsViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "ViewController.h"
 
 @interface IngredientsViewController ()
 
@@ -108,6 +109,13 @@
 		}
 	}
     
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ViewController* controller = (ViewController *)segue.destinationViewController;
+    controller.viewTitle = segue.identifier;
 }
 
 
