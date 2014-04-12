@@ -207,11 +207,9 @@ static NSString *cellId2 = @"cellId2";
     UILabel *nameLabel = (UILabel*)[cell viewWithTag:101];
     PFObject* currentDrink = [allDrinks objectAtIndex:indexPath.item];
     NSMutableString *drinkText = [[currentDrink objectForKey:@"name"] mutableCopy];
-    float freshNum = [[currentDrink objectForKey:@"freshness"] floatValue];
-    float tasteNum = [[currentDrink objectForKey:@"taste"] floatValue];
-    float scoreNum = freshNum + tasteNum;
-    NSString *scoreString = [NSString stringWithFormat:@"%f", scoreNum];
-    NSString *dashString = @" - ";
+    float scoreNum = [[currentDrink objectForKey:@"score"] floatValue];
+    NSString *scoreString = [NSString stringWithFormat:@"%.1f", scoreNum];
+    NSString *dashString = @"  ";
     [drinkText appendString:dashString];
     [drinkText appendString:scoreString];
     
@@ -317,6 +315,7 @@ static NSString *cellId2 = @"cellId2";
     else {
         query = [PFQuery queryWithClassName:@"Favorites"];
     }
+    [query orderByDescending:@"score"];
     //PFUser *user = [PFUser currentUser];
     //[query whereKey:@"objectId" equalTo:@"6wz5f8NQns"];
     NSArray* objects = [query findObjects];
@@ -425,4 +424,6 @@ static NSString *cellId2 = @"cellId2";
 - (IBAction)backButton:(id)sender {
     [self performSegueWithIdentifier:@"fromFavs" sender:sender];
 }
+
+
 @end

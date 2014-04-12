@@ -63,6 +63,7 @@
 		DA89B76818F9049600C051C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89B75F18F9049600C051C1 /* StoreKit.framework */; };
 		DA89B76918F9049600C051C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89B76018F9049600C051C1 /* SystemConfiguration.framework */; };
 		DA89B76C18F9334800C051C1 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA89B76B18F9334800C051C1 /* default.jpg */; };
+		DA89B77018F969BB00C051C1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA89B76E18F969BB00C051C1 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,8 @@
 		DA89B75F18F9049600C051C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DA89B76018F9049600C051C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DA89B76B18F9334800C051C1 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		DA89B76D18F969BB00C051C1 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DA89B76E18F969BB00C051C1 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +271,8 @@
 				71D04A1918D3068F0077B38B /* Main_iPhone.storyboard */,
 				71D04A1F18D3068F0077B38B /* ViewController.h */,
 				71D04A2018D3068F0077B38B /* ViewController.m */,
+				DA89B76D18F969BB00C051C1 /* DetailViewController.h */,
+				DA89B76E18F969BB00C051C1 /* DetailViewController.m */,
 				0BDEF02B18F90F6B00989B1E /* IngredientsViewController.h */,
 				0BDEF02C18F90F6B00989B1E /* IngredientsViewController.m */,
 				0BDEF04E18F9276900989B1E /* NewDrinkViewController.h */,
@@ -466,6 +471,7 @@
 			files = (
 				0BDEF02D18F90F6B00989B1E /* IngredientsViewController.m in Sources */,
 				71D04A2118D3068F0077B38B /* ViewController.m in Sources */,
+				DA89B77018F969BB00C051C1 /* DetailViewController.m in Sources */,
 				71D04A1818D3068F0077B38B /* AppDelegate.m in Sources */,
 				0BDEF03E18F911F900989B1E /* ALRadialMenu.m in Sources */,
 				0BDEF05018F9276900989B1E /* NewDrinkViewController.m in Sources */,
