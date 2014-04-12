@@ -93,7 +93,7 @@
 
 - (IBAction)favorite:(id)sender {
     for (PFObject *object in self.objects) {
-        NSLog(@"%@", object.objectId);
+        NSLog(@"first: %@", object.objectId);
         PFObject *fav = [PFObject objectWithClassName:@"Favorites"];
         
         fav[@"name"]=[object objectForKey:@"name"];
