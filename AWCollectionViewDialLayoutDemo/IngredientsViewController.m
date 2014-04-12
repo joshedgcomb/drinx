@@ -26,15 +26,7 @@
     return self;
 }
 
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    //NSLog(@"You entered %@",self.drinkName.text);
-    [self.firstIngred resignFirstResponder];
-    [self.secondIngred resignFirstResponder];
-    [self.thirdIngred resignFirstResponder];
-    [self.fourthIngred resignFirstResponder];
-    return YES;
-}
+
 
 - (void)viewDidLoad
 {
@@ -207,9 +199,17 @@
 
 
 - (IBAction)mix:(id)sender {
-        PFQuery *query = [PFQuery queryWithClassName:@"Drinks"];
+    NSLog(self.firstIngred.text);
+        PFQuery *query = [PFQuery queryWithClassName:@"Drink"];
         [query whereKey:@"firstIngred" equalTo:self.firstIngred.text];
         NSArray *results= [query findObjects];
+    //if ([@"Rum" isEqualToString:self.firstIngred.text]) {
+       // self.myDrink = [results objectAtIndex:0];
+        //[self performSegueWithIdentifier:@"mixToDetail" sender:self];
+    //}
+    //for (*eachObject in results){
+        
+    //}
         if (results.count > 0){
              self.myDrink = [results objectAtIndex:0];
             [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
@@ -219,6 +219,8 @@
             [query whereKey:@"secondIngred" equalTo:self.firstIngred.text];
             results= [query findObjects];
             if (results.count > 0){
+                self.myDrink = [results objectAtIndex:0];
+                [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                 // segue to detail view of first object in list
                 NSLog(@"result found");
             }
@@ -226,6 +228,8 @@
                 [query whereKey:@"thirdIngred" equalTo:self.firstIngred.text];
                 results= [query findObjects];
                 if (results.count > 0){
+                    self.myDrink = [results objectAtIndex:0];
+                    [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                     // segue to detail view of first object in list
                     NSLog(@"result found");
                 }
@@ -233,6 +237,8 @@
                     [query whereKey:@"fourthIngred" equalTo:self.firstIngred.text];
                     results= [query findObjects];
                     if (results.count > 0){
+                        self.myDrink = [results objectAtIndex:0];
+                        [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                         // segue to detail view of first object in list
                         NSLog(@"result found");
                     }
@@ -240,6 +246,8 @@
                         [query whereKey:@"firstIngred" equalTo:self.secondIngred.text];
                         results= [query findObjects];
                         if (results.count > 0){
+                            self.myDrink = [results objectAtIndex:0];
+                            [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                             // segue to detail view of first object in list
                             NSLog(@"result found");
                         }
@@ -247,6 +255,8 @@
                             [query whereKey:@"secondIngred" equalTo:self.secondIngred.text];
                             results= [query findObjects];
                             if (results.count > 0){
+                                self.myDrink = [results objectAtIndex:0];
+                                [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                 // segue to detail view of first object in list
                                 NSLog(@"result found");
                             }
@@ -254,6 +264,8 @@
                                 [query whereKey:@"thirdIngred" equalTo:self.secondIngred.text];
                                 results= [query findObjects];
                                 if (results.count > 0){
+                                    self.myDrink = [results objectAtIndex:0];
+                                    [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                     // segue to detail view of first object in list
                                     NSLog(@"result found");
                                 }
@@ -261,6 +273,8 @@
                                     [query whereKey:@"fourthIngred" equalTo:self.secondIngred.text];
                                     results= [query findObjects];
                                     if (results.count > 0){
+                                        self.myDrink = [results objectAtIndex:0];
+                                        [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                         // segue to detail view of first object in list
                                         NSLog(@"result found");
                                     }
@@ -268,6 +282,8 @@
                                         [query whereKey:@"firstIngred" equalTo:self.thirdIngred.text];
                                         results= [query findObjects];
                                         if (results.count > 0){
+                                            self.myDrink = [results objectAtIndex:0];
+                                            [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                             // segue to detail view of first object in list
                                             NSLog(@"result found");
                                         }
@@ -275,6 +291,8 @@
                                             [query whereKey:@"secondIngred" equalTo:self.thirdIngred.text];
                                             results= [query findObjects];
                                             if (results.count > 0){
+                                                self.myDrink = [results objectAtIndex:0];
+                                                [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                                 // segue to detail view of first object in list
                                                 NSLog(@"result found");
                                             }
@@ -282,6 +300,8 @@
                                                 [query whereKey:@"thirdIngred" equalTo:self.thirdIngred.text];
                                                 results= [query findObjects];
                                                 if (results.count > 0){
+                                                    self.myDrink = [results objectAtIndex:0];
+                                                    [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                                     // segue to detail view of first object in list
                                                     NSLog(@"result found");
                                                 }
@@ -289,6 +309,8 @@
                                                     [query whereKey:@"fourthIngred" equalTo:self.thirdIngred.text];
                                                     results= [query findObjects];
                                                     if (results.count > 0){
+                                                        self.myDrink = [results objectAtIndex:0];
+                                                        [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                                         // segue to detail view of first object in list
                                                         NSLog(@"result found");
                                                     }
@@ -296,6 +318,8 @@
                                                         [query whereKey:@"firstIngred" equalTo:self.fourthIngred.text];
                                                         results= [query findObjects];
                                                         if (results.count > 0){
+                                                            self.myDrink = [results objectAtIndex:0];
+                                                            [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                                             // segue to detail view of first object in list
                                                             NSLog(@"result found");
                                                         }
@@ -303,6 +327,8 @@
                                                             [query whereKey:@"secondIngred" equalTo:self.fourthIngred.text];
                                                             results= [query findObjects];
                                                             if (results.count > 0){
+                                                                self.myDrink = [results objectAtIndex:0];
+                                                                [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                                                 // segue to detail view of first object in list
                                                                 NSLog(@"result found");
                                                             }
@@ -310,6 +336,8 @@
                                                                 [query whereKey:@"thirdIngred" equalTo:self.fourthIngred.text];
                                                                 results= [query findObjects];
                                                                 if (results.count > 0){
+                                                                    self.myDrink = [results objectAtIndex:0];
+                                                                    [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                                                     // segue to detail view of first object in list
                                                                     NSLog(@"result found");
                                                                 }
@@ -317,6 +345,8 @@
                                                                     [query whereKey:@"fourthIngred" equalTo:self.fourthIngred.text];
                                                                     results= [query findObjects];
                                                                     if (results.count > 0){
+                                                                        self.myDrink = [results objectAtIndex:0];
+                                                                        [self performSegueWithIdentifier:@"mixToDetail" sender:sender];
                                                                         // segue to detail view of first object in list
                                                                         NSLog(@"result found");
                                                                     }
@@ -336,4 +366,5 @@
             }
         }
 }
+
 @end

@@ -29,7 +29,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingridient" textAlignment="center" minimumFontSize="17" id="aPB-cZ-507">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingredient" textAlignment="center" minimumFontSize="17" id="aPB-cZ-507">
                                 <rect key="frame" x="48" y="194" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -37,10 +37,10 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="v9l-5S-5gB"/>
+                                    <outlet property="delegate" destination="tVb-ED-Uae" id="2wc-rk-a9R"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingridient" textAlignment="center" minimumFontSize="17" id="g5O-Mj-JN3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingredient" textAlignment="center" minimumFontSize="17" id="g5O-Mj-JN3">
                                 <rect key="frame" x="48" y="228" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -48,10 +48,10 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="WyQ-Ng-wvG"/>
+                                    <outlet property="delegate" destination="tVb-ED-Uae" id="SJA-KL-B1W"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingridient" textAlignment="center" minimumFontSize="17" id="V4b-Xa-Fc3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingredient" textAlignment="center" minimumFontSize="17" id="V4b-Xa-Fc3">
                                 <rect key="frame" x="48" y="262" width="246" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -59,7 +59,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="IKz-PX-c9T"/>
+                                    <outlet property="delegate" destination="tVb-ED-Uae" id="yYk-9x-u5e"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add Ingridient" textAlignment="center" minimumFontSize="17" id="kSD-XT-hw7">
@@ -70,7 +70,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="Oic-fY-O9i"/>
+                                    <outlet property="delegate" destination="tVb-ED-Uae" id="oYX-I7-2b5"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6fg-vI-6py">
@@ -103,7 +103,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addToParse:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="fLI-JG-xFW"/>
+                                    <action selector="mix:" destination="tVb-ED-Uae" eventType="touchUpInside" id="Z2m-lc-Qc0"/>
                                 </connections>
                             </button>
                         </subviews>
