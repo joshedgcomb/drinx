@@ -112,5 +112,7 @@
 }
 
 - (IBAction)goBack:(id)sender {
+    [self performSegueWithIdentifier:@"home" sender:sender];
+
 }
 @end
