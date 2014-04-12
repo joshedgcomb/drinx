@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZYc-8c-MOt">
-                                <rect key="frame" x="20" y="28" width="30" height="30"/>
+                                <rect key="frame" x="20" y="28" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="cornerButton" image="menubutton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,6 +80,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="addIngred:" destination="tVb-ED-Uae" eventType="touchUpInside" id="1qX-bE-rzQ"/>
                                     <action selector="addIngred:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="llJ-dK-vcH"/>
                                 </connections>
                             </button>
@@ -90,7 +91,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="removeIngred:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="T7W-7f-eLK"/>
+                                    <action selector="removeIngred:" destination="tVb-ED-Uae" eventType="touchUpInside" id="RuC-7z-RNF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dlb-GC-xU7">
@@ -110,6 +111,11 @@
                     </view>
                     <connections>
                         <outlet property="cornerButton" destination="ZYc-8c-MOt" id="5Nm-RA-i4c"/>
+                        <outlet property="firstIngred" destination="aPB-cZ-507" id="ttr-Ps-8hm"/>
+                        <outlet property="fourthIngred" destination="kSD-XT-hw7" id="iwV-dp-V0U"/>
+                        <outlet property="removeButton" destination="trz-bZ-Mvh" id="XWm-Yn-sps"/>
+                        <outlet property="secondIngred" destination="g5O-Mj-JN3" id="Pgb-bU-AgH"/>
+                        <outlet property="thirdIngred" destination="V4b-Xa-Fc3" id="ewN-7o-Gef"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="favs" id="0t7-JI-Hj2"/>
                         <segue destination="2uJ-bj-Wc6" kind="modal" identifier="add" id="Foh-vY-24K"/>
                     </connections>
@@ -143,7 +149,7 @@
                                 </connections>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zPl-17-wrD">
-                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                <rect key="frame" x="20" y="20" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="backarrow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -307,7 +313,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8RU-0i-lBd">
-                                <rect key="frame" x="15" y="20" width="30" height="30"/>
+                                <rect key="frame" x="15" y="20" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="backarrow.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
