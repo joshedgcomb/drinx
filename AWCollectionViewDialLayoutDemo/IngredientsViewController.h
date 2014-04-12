@@ -14,5 +14,6 @@
 - (IBAction)menuPressed:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *cornerButton;
 @property (strong, nonatomic) ALRadialMenu *cornerMenu;
+@property NSInteger *myIndex;
 
 @end

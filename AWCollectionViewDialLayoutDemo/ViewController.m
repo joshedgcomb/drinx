@@ -34,12 +34,13 @@ static NSString *cellId2 = @"cellId2";
     int type;
 }
 
-@synthesize collectionView, items, editBtn;
+@synthesize collectionView, items, editBtn, viewTitle;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [self.myTitle setText:@"hi"];
+    NSLog(@"wheeee");
+    NSLog(@"%d",self.numnum);
+    [self.theTitle setText:self.viewTitle];
     type = 0;
     showingSettings = NO;
     allDrinks = [[NSMutableArray alloc] init];
@@ -212,7 +213,7 @@ static NSString *cellId2 = @"cellId2";
     
     
     if(type == 0){
-        NSLog(@"hiii");
+        //NSLog(@"hiii");
         
         UIView *borderView = [cell viewWithTag:102];
         
@@ -296,7 +297,15 @@ static NSString *cellId2 = @"cellId2";
 
 - (NSMutableArray*)downloadAllDrinks
 {
-    PFQuery *query = [PFQuery queryWithClassName:@"Drink"];
+    PFQuery *query;
+    if (self.numnum == 3)  {
+        
+
+        query = [PFQuery queryWithClassName:@"Drink"];
+    }
+    else {
+        query = [PFQuery queryWithClassName:@"Favorites"];
+    }
     //PFUser *user = [PFUser currentUser];
     //[query whereKey:@"objectId" equalTo:@"6wz5f8NQns"];
     NSArray* objects = [query findObjects];
@@ -308,16 +317,16 @@ static NSString *cellId2 = @"cellId2";
        // NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
         
         if (objects.count > 0) {
-            NSLog(@"yoooo:");
+            //NSLog(@"yoooo:");
             for (PFObject *eachObject in objects) {
                 //NSLog([eachObject objectId]);
                 [allDrinks addObject:eachObject];
-                NSLog(@"%d",allDrinks.count);
+                //NSLog(@"%d",allDrinks.count);
             }
             
             }
         else    {
-            NSLog(@"nope");
+            //NSLog(@"nope");
         }
     //}];
     return [self setUpImages:allDrinks];
@@ -336,13 +345,13 @@ static NSString *cellId2 = @"cellId2";
         for (int i = 0; i < images.count; i++) {
             //NSLog(@"aaaaaalkajlkalalkaklsljaljaljdlldldljkasdljkadjlksjdajdlajsdl");
             PFObject *eachObject = [images objectAtIndex:i];
-            NSLog([eachObject objectId]);
+            //NSLog([eachObject objectId]);
             PFFile *theImage = [eachObject objectForKey:@"image"];
             NSData *imageData = [theImage getData];
-            NSLog(@"jlskdjfklds");
+            //NSLog(@"jlskdjfklds");
             UIImage *image = [UIImage imageWithData:imageData];
 
-            NSLog(@"ajlsjdflkajsdlkfjalskdjflajsdlfkjalsdfjalsdjflaksjdf");
+            //NSLog(@"ajlsjdflkajsdlkfjalskdjflajsdlfkjalsdfjalsdjflaksjdf");
             if (image != nil)   {
             [imageDataArray addObject:image];
             }

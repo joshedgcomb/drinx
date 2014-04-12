@@ -165,9 +165,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="9M6-aW-M6X" id="Ixx-GR-ka1"/>
-                        <outlet property="myTitle" destination="gD3-Ob-WoO" id="kNK-yT-JnG"/>
-                        <outlet property="title" destination="gD3-Ob-WoO" id="UCK-Ki-kXu"/>
-                        <outlet property="vtitle" destination="gD3-Ob-WoO" id="GWT-x0-d5g"/>
+                        <outlet property="theTitle" destination="gD3-Ob-WoO" id="xtT-ex-tRs"/>
                         <segue destination="tVb-ED-Uae" kind="modal" identifier="fromFavs" id="lnr-ft-gPx"/>
                     </connections>
                 </viewController>

@@ -14,12 +14,12 @@
     NSMutableArray *allDrinks;
     NSMutableArray *myImages;
 }
-
-@property (weak, nonatomic) IBOutlet UILabel *myTitle;
+@property (weak, nonatomic) IBOutlet UILabel *theTitle;
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *editBtn;
 @property NSArray *items;
 @property NSString *viewTitle;
+@property NSInteger *numnum;
 - (IBAction)backButton:(id)sender;
 @end
