@@ -61,6 +61,7 @@
 		DA89B76718F9049600C051C1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89B75E18F9049600C051C1 /* Security.framework */; };
 		DA89B76818F9049600C051C1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89B75F18F9049600C051C1 /* StoreKit.framework */; };
 		DA89B76918F9049600C051C1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA89B76018F9049600C051C1 /* SystemConfiguration.framework */; };
+		DA89B76C18F9334800C051C1 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA89B76B18F9334800C051C1 /* default.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,7 @@
 		DA89B75E18F9049600C051C1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		DA89B75F18F9049600C051C1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DA89B76018F9049600C051C1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DA89B76B18F9334800C051C1 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +332,7 @@
 				71D04A4A18D3114C0077B38B /* kyrie_irving.png */,
 				71D04A4B18D3114C0077B38B /* lebron_james.png */,
 				71D04A4C18D3114C0077B38B /* paul_george.png */,
+				DA89B76B18F9334800C051C1 /* default.jpg */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				0BDEF05418F942F600989B1E /* menubutton.png in Resources */,
 				71D04A4418D309C40077B38B /* dialCell.xib in Resources */,
 				71D04A4E18D3114C0077B38B /* dwayne_wade.png in Resources */,
+				DA89B76C18F9334800C051C1 /* default.jpg in Resources */,
 				71D04A4618D311190077B38B /* drinks.json in Resources */,
 				0BDEF02A18F90E8A00989B1E /* favoritesbutton.png in Resources */,
 				71D04A2318D3068F0077B38B /* Images.xcassets in Resources */,
