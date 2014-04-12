@@ -133,4 +133,8 @@
     
     [drink saveInBackground];
 }
+
+- (IBAction)backButton:(id)sender {
+    [self performSegueWithIdentifier:@"fromNew" sender:sender];
+}
 @end

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0BDEF02818F90E8A00989B1E /* drinksbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF02518F90E8A00989B1E /* drinksbutton.png */; };
-		0BDEF02918F90E8A00989B1E /* menubutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF02618F90E8A00989B1E /* menubutton.png */; };
 		0BDEF02A18F90E8A00989B1E /* favoritesbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF02718F90E8A00989B1E /* favoritesbutton.png */; };
 		0BDEF02D18F90F6B00989B1E /* IngredientsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEF02C18F90F6B00989B1E /* IngredientsViewController.m */; };
 		0BDEF03818F911D700989B1E /* addthis500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF03718F911D700989B1E /* addthis500.png */; };
@@ -21,6 +20,8 @@
 		0BDEF04D18F9243900989B1E /* addthis500.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04C18F9243900989B1E /* addthis500.2.png */; };
 		0BDEF05018F9276900989B1E /* NewDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEF04F18F9276900989B1E /* NewDrinkViewController.m */; };
 		0BDEF05218F9302500989B1E /* minusbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF05118F9302500989B1E /* minusbutton.png */; };
+		0BDEF05418F942F600989B1E /* menubutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF05318F942F600989B1E /* menubutton.png */; };
+		0BDEF05618F9435C00989B1E /* backarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF05518F9435C00989B1E /* backarrow.png */; };
 		71D04A0818D3068F0077B38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0718D3068F0077B38B /* Foundation.framework */; };
 		71D04A0A18D3068F0077B38B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0918D3068F0077B38B /* CoreGraphics.framework */; };
 		71D04A0C18D3068F0077B38B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0B18D3068F0077B38B /* UIKit.framework */; };
@@ -74,7 +75,6 @@
 
 /* Begin PBXFileReference section */
 		0BDEF02518F90E8A00989B1E /* drinksbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drinksbutton.png; sourceTree = "<group>"; };
-		0BDEF02618F90E8A00989B1E /* menubutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubutton.png; sourceTree = "<group>"; };
 		0BDEF02718F90E8A00989B1E /* favoritesbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favoritesbutton.png; sourceTree = "<group>"; };
 		0BDEF02B18F90F6B00989B1E /* IngredientsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IngredientsViewController.h; sourceTree = "<group>"; };
 		0BDEF02C18F90F6B00989B1E /* IngredientsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IngredientsViewController.m; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		0BDEF04E18F9276900989B1E /* NewDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDrinkViewController.h; sourceTree = "<group>"; };
 		0BDEF04F18F9276900989B1E /* NewDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDrinkViewController.m; sourceTree = "<group>"; };
 		0BDEF05118F9302500989B1E /* minusbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minusbutton.png; sourceTree = "<group>"; };
+		0BDEF05318F942F600989B1E /* menubutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menubutton.png; sourceTree = "<group>"; };
+		0BDEF05518F9435C00989B1E /* backarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backarrow.png; sourceTree = "<group>"; };
 		71D04A0418D3068F0077B38B /* AWCollectionViewDialLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWCollectionViewDialLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D04A0718D3068F0077B38B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71D04A0918D3068F0077B38B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,9 +178,10 @@
 			isa = PBXGroup;
 			children = (
 				0BDEF04C18F9243900989B1E /* addthis500.2.png */,
+				0BDEF05318F942F600989B1E /* menubutton.png */,
+				0BDEF05518F9435C00989B1E /* backarrow.png */,
 				0BDEF05118F9302500989B1E /* minusbutton.png */,
 				0BDEF02518F90E8A00989B1E /* drinksbutton.png */,
-				0BDEF02618F90E8A00989B1E /* menubutton.png */,
 				0BDEF02718F90E8A00989B1E /* favoritesbutton.png */,
 				0BDEF03718F911D700989B1E /* addthis500.png */,
 			);
@@ -415,13 +418,14 @@
 				0BDEF04B18F91DF100989B1E /* pinterest.png in Resources */,
 				0BDEF04518F91DAB00989B1E /* sharethis.png in Resources */,
 				71D04A4F18D3114C0077B38B /* kyrie_irving.png in Resources */,
-				0BDEF02918F90E8A00989B1E /* menubutton.png in Resources */,
 				71DD0C6418D3540400152D0C /* iphone_settings_view.xib in Resources */,
 				71D04A5018D3114C0077B38B /* lebron_james.png in Resources */,
 				0BDEF04918F91DC900989B1E /* twitter.png in Resources */,
 				0BDEF05218F9302500989B1E /* minusbutton.png in Resources */,
+				0BDEF05618F9435C00989B1E /* backarrow.png in Resources */,
 				0BDEF03818F911D700989B1E /* addthis500.png in Resources */,
 				71D04A5318D315980077B38B /* james_harden.png in Resources */,
+				0BDEF05418F942F600989B1E /* menubutton.png in Resources */,
 				71D04A4418D309C40077B38B /* dialCell.xib in Resources */,
 				71D04A4E18D3114C0077B38B /* dwayne_wade.png in Resources */,
 				71D04A4618D311190077B38B /* drinks.json in Resources */,

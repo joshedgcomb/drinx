@@ -29,4 +29,6 @@
 
 - (IBAction)addToParse:(id)sender;
 
+- (IBAction)backButton:(id)sender;
+
 @end
