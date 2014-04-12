@@ -15,6 +15,8 @@
     NSMutableArray *myImages;
 }
 
+@property (weak, nonatomic) IBOutlet UILabel *myTitle;
+
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *editBtn;
 @property NSArray *items;

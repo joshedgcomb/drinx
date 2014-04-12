@@ -114,8 +114,11 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if (index == 2 || index == 3)   {
+        
     ViewController* controller = (ViewController *)segue.destinationViewController;
     controller.viewTitle = segue.identifier;
+    }
 }
 
 

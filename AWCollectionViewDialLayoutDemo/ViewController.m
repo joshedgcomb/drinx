@@ -39,6 +39,7 @@ static NSString *cellId2 = @"cellId2";
 {
     [super viewDidLoad];
     
+    [self.myTitle setText:@"hi"];
     type = 0;
     showingSettings = NO;
     allDrinks = [[NSMutableArray alloc] init];
