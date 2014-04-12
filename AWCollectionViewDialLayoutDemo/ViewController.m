@@ -38,8 +38,11 @@ static NSString *cellId2 = @"cellId2";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     type = 0;
     showingSettings = NO;
+    allDrinks = [[NSMutableArray alloc] init];
+    myImages = [self downloadAllDrinks];
     
     [collectionView registerNib:[UINib nibWithNibName:@"dialCell" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:cellId];
     [collectionView registerNib:[UINib nibWithNibName:@"dialCell2" bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:cellId2];
@@ -48,7 +51,7 @@ static NSString *cellId2 = @"cellId2";
     NSError *error;
     NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"drinks" ofType:@"json"];
     NSString *jsonString = [[NSString alloc] initWithContentsOfFile:jsonPath encoding:NSUTF8StringEncoding error:NULL];
-    NSLog(@"jsonString:%@",jsonString);
+    //NSLog(@"jsonString:%@",jsonString);
     items = [NSJSONSerialization JSONObjectWithData:[jsonString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
     
     settingsView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, self.view.frame.size.height-44)];
@@ -155,7 +158,7 @@ static NSString *cellId2 = @"cellId2";
     
     [dialLayout invalidateLayout];
     //[collectionView reloadData];
-    NSLog(@"updateDialSettings");
+    //NSLog(@"updateDialSettings");
 }
 
 -(void)toggleSettingsView{
@@ -207,6 +210,8 @@ static NSString *cellId2 = @"cellId2";
     
     
     if(type == 0){
+        NSLog(@"hiii");
+        
         UIView *borderView = [cell viewWithTag:102];
         
         borderView.layer.borderWidth = 1;
@@ -215,7 +220,7 @@ static NSString *cellId2 = @"cellId2";
         NSString *imgURL = [item valueForKey:@"picture"];
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
         [imgView setImage:nil];
-        __block UIImage *imageProduct = [thumbnailCache objectForKey:imgURL];
+        UIImage *imageProduct = [UIImage imageNamed:@"default.jpg"];
         if(imageProduct){
             imgView.image = imageProduct;
         }
@@ -239,7 +244,7 @@ static NSString *cellId2 = @"cellId2";
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"didEndDisplayingCell:%i", (int)indexPath.item);
+    //NSLog(@"didEndDisplayingCell:%i", (int)indexPath.item);
 }
 
 
@@ -285,5 +290,116 @@ static NSString *cellId2 = @"cellId2";
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (NSMutableArray*)downloadAllDrinks
+{
+    
+    NSLog(@"dfsjlkafjls;");
+    PFQuery *query = [PFQuery queryWithClassName:@"Drink"];
+    //PFUser *user = [PFUser currentUser];
+    //[query whereKey:@"objectId" equalTo:@"6wz5f8NQns"];
+    NSArray* objects = [query findObjects];
+    //[query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        // If there are photos, we start extracting the data
+        // Save a list of object IDs while extracting this data
+        
+        
+       // NSUserDefaults *standardUserDefaults = [NSUserDefaults standardUserDefaults];
+        
+        if (objects.count > 0) {
+            NSLog(@"yoooo:");
+            for (PFObject *eachObject in objects) {
+                //NSLog([eachObject objectId]);
+                [allDrinks addObject:eachObject];
+                NSLog(@"%d",allDrinks.count);
+            }
+            
+            }
+        else    {
+            NSLog(@"damnit");
+        }
+    //}];
+    return [self setUpImages:allDrinks];
+}
+
+- (NSMutableArray*)setUpImages:(NSArray *)images
+{
+    // Contains a list of all the BUTTONS
+    allDrinks = [images mutableCopy];
+    NSMutableArray *imageDataArray = [NSMutableArray array];
+    
+    // This method sets up the downloaded images and places them nicely in a grid
+        
+        
+        // Iterate over all images and get the data from the PFFile
+        for (int i = 0; i < images.count; i++) {
+            //NSLog(@"aaaaaalkajlkalalkaklsljaljaljdlldldljkasdljkadjlksjdajdlajsdl");
+            PFObject *eachObject = [images objectAtIndex:i];
+            NSLog([eachObject objectId]);
+            PFFile *theImage = [eachObject objectForKey:@"image"];
+            NSData *imageData = [theImage getData];
+            NSLog(@"jlskdjfklds");
+            UIImage *image = [UIImage imageWithData:imageData];
+
+            NSLog(@"ajlsjdflkajsdlkfjalskdjflajsdlfkjalsdfjalsdjflaksjdf");
+            if (image != nil)   {
+            [imageDataArray addObject:image];
+            }
+            else{
+                
+                [imageDataArray addObject:[UIImage imageNamed:@"default.jpg"]];
+            }
+            
+        }
+        
+        /*// Dispatch to main thread to update the UI
+        dispatch_async(dispatch_get_main_queue(), ^{
+            // Remove old grid
+            for (UIView *view in [photoScrollView subviews]) {
+                if ([view isKindOfClass:[UIButton class]]) {
+                    [view removeFromSuperview];
+                }
+            }
+            
+            // Create the buttons necessary for each image in the grid
+            for (int i = 0; i < [imageDataArray count]; i++) {
+                PFObject *eachObject = [images objectAtIndex:i];
+                UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+                UIImage *image = [imageDataArray objectAtIndex:i];
+                [button setImage:image forState:UIControlStateNormal];
+                button.showsTouchWhenHighlighted = YES;
+                [button addTarget:self action:@selector(buttonTouched:) forControlEvents:UIControlEventTouchUpInside];
+                button.tag = i;
+                button.frame = CGRectMake(THUMBNAIL_WIDTH * (i % THUMBNAIL_COLS) + PADDING * (i % THUMBNAIL_COLS) + PADDING,
+                                          THUMBNAIL_HEIGHT * (i / THUMBNAIL_COLS) + PADDING * (i / THUMBNAIL_COLS) + PADDING + PADDING_TOP,
+                                          THUMBNAIL_WIDTH,
+                                          THUMBNAIL_HEIGHT);
+                button.imageView.contentMode = UIViewContentModeScaleAspectFill;
+                [button setTitle:[eachObject objectId] forState:UIControlStateReserved];
+                //[photoScrollView addSubview:button];
+            }
+            
+            // Size the grid accordingly
+            int rows = images.count / THUMBNAIL_COLS;
+            if (((float)images.count / THUMBNAIL_COLS) - rows != 0) {
+                rows++;
+            }
+            int height = THUMBNAIL_HEIGHT * rows + PADDING * rows + PADDING + PADDING_TOP;
+            
+            photoScrollView.contentSize = CGSizeMake(self.view.frame.size.width, height);
+            photoScrollView.clipsToBounds = YES;
+             */
+
+    return imageDataArray;
+}
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self performSegueWithIdentifier:@"bonerSegue" sender:self];
+}
+
+
 
 @end

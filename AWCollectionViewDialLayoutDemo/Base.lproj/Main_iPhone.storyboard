@@ -63,11 +63,31 @@
                     <connections>
                         <outlet property="collectionView" destination="9M6-aW-M6X" id="Ixx-GR-ka1"/>
                         <outlet property="editBtn" destination="GMJ-pP-5Mf" id="U8V-dH-Pro"/>
+                        <segue destination="kCW-lX-dJq" kind="modal" identifier="bonerSegue" id="P8y-8Y-GZf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469" y="181"/>
+            <point key="canvasLocation" x="337" y="-65"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0j6-sQ-YxD">
+            <objects>
+                <viewController id="kCW-lX-dJq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KpB-1k-JFM"/>
+                        <viewControllerLayoutGuide type="bottom" id="3rW-K9-LLO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nAx-Hy-3GR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9jf-Jn-BF3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gs-GS-07L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="289"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

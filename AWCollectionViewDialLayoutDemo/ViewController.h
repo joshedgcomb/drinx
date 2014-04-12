@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate> {
+    
+    NSMutableArray *allDrinks;
+    NSMutableArray *myImages;
+}
 
 @property (nonatomic, weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem *editBtn;
