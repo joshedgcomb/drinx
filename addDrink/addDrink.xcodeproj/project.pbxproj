@@ -419,8 +419,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
 					"$(inherited)",
-					/Users/jarthurcs/Desktop/hackathon/addDrink,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "addDrink/addDrink-Prefix.pch";
@@ -436,8 +436,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/**",
 					"$(inherited)",
-					/Users/jarthurcs/Desktop/hackathon/addDrink,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "addDrink/addDrink-Prefix.pch";
@@ -508,6 +508,7 @@
 				DA92D1E618F9053B00E9B59D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA92D1E718F9053B00E9B59D /* Build configuration list for PBXNativeTarget "addDrinkTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +517,7 @@
 				DA92D1E918F9053B00E9B59D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -99,6 +99,7 @@
 		[self.cornerMenu itemsWillDisapearIntoButton:self.cornerButton];
 		if (index == 1) {
 			NSLog(@"add");
+            [self performSegueWithIdentifier:@"add" sender:self.cornerButton];
 		} else if (index == 2) {
 			NSLog(@"favs");
             [self performSegueWithIdentifier:@"favs" sender:self.cornerButton];

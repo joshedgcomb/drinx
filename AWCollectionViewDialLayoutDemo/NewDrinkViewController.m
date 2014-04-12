@@ -1,18 +1,18 @@
 //
-//  ViewController.m
-//  addDrink
+//  NewDrinkViewController.m
+//  AWCollectionViewDialLayoutDemo
 //
-//  Created by jarthurcs on 4/11/14.
-//  Copyright (c) 2014 jverticchio. All rights reserved.
+//  Created by Kevin Byrne on 4/12/14.
+//  Copyright (c) 2014 Antoine Wette. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "NewDrinkViewController.h"
 
-@interface ViewController ()
+@interface NewDrinkViewController ()
 
 @end
 
-@implementation ViewController
+@implementation NewDrinkViewController
 
 - (void)viewDidLoad
 {
@@ -53,13 +53,13 @@
     else if (self.thirdIng.isHidden == FALSE){
         [self.thirdIng setText:nil];
         [self.thirdIng setHidden:TRUE];
-            NSLog(@"3");
+        NSLog(@"3");
     }
     else if (self.secondIng.isHidden == FALSE){
         [self.secondIng setText:nil];
         [self.secondIng setHidden:TRUE];
         [self.removeButton setHidden:TRUE];
-                NSLog(@"2");
+        NSLog(@"2");
     }
 }
 
@@ -111,15 +111,15 @@
 //    float freshness = [self.freshness value];
 //    NSNumber *tasteNum = [NSNumber numberWithFloat:taste];
 //    NSNumber *freshNum = [NSNumber numberWithFloat:freshness];
-//    
-//    
-//    
+//
+//
+//
 //    drink[@"name"] = [NSString stringWithFormat:self.drinkName.text];
 //    drink[@"firstIngred"] = ingredients;
 //    drink[@"image"] = self.drinkImage.image;
 //    drink[@"taste"] = [NSNumber numberWithFloat:self.taste.value];
 //    drink[@"freshness"] = [NSNumber numberWithFloat:self.taste.value];
-//    
+//
 //    //[drink saveInBackground];
 //}
 @end

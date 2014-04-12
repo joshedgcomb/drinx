@@ -18,6 +18,8 @@
 		0BDEF04718F91DB500989B1E /* facebook500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04618F91DB500989B1E /* facebook500.png */; };
 		0BDEF04918F91DC900989B1E /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04818F91DC900989B1E /* twitter.png */; };
 		0BDEF04B18F91DF100989B1E /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04A18F91DF100989B1E /* pinterest.png */; };
+		0BDEF04D18F9243900989B1E /* addthis500.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF04C18F9243900989B1E /* addthis500.2.png */; };
+		0BDEF05018F9276900989B1E /* NewDrinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEF04F18F9276900989B1E /* NewDrinkViewController.m */; };
 		71D04A0818D3068F0077B38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0718D3068F0077B38B /* Foundation.framework */; };
 		71D04A0A18D3068F0077B38B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0918D3068F0077B38B /* CoreGraphics.framework */; };
 		71D04A0C18D3068F0077B38B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0B18D3068F0077B38B /* UIKit.framework */; };
@@ -84,6 +86,9 @@
 		0BDEF04618F91DB500989B1E /* facebook500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook500.png; sourceTree = "<group>"; };
 		0BDEF04818F91DC900989B1E /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		0BDEF04A18F91DF100989B1E /* pinterest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterest.png; sourceTree = "<group>"; };
+		0BDEF04C18F9243900989B1E /* addthis500.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addthis500.2.png; sourceTree = "<group>"; };
+		0BDEF04E18F9276900989B1E /* NewDrinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDrinkViewController.h; sourceTree = "<group>"; };
+		0BDEF04F18F9276900989B1E /* NewDrinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDrinkViewController.m; sourceTree = "<group>"; };
 		71D04A0418D3068F0077B38B /* AWCollectionViewDialLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWCollectionViewDialLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D04A0718D3068F0077B38B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71D04A0918D3068F0077B38B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -168,6 +173,7 @@
 		0BDEF02218F90E6700989B1E /* Menu Images */ = {
 			isa = PBXGroup;
 			children = (
+				0BDEF04C18F9243900989B1E /* addthis500.2.png */,
 				0BDEF02518F90E8A00989B1E /* drinksbutton.png */,
 				0BDEF02618F90E8A00989B1E /* menubutton.png */,
 				0BDEF02718F90E8A00989B1E /* favoritesbutton.png */,
@@ -253,6 +259,8 @@
 				71D04A2018D3068F0077B38B /* ViewController.m */,
 				0BDEF02B18F90F6B00989B1E /* IngredientsViewController.h */,
 				0BDEF02C18F90F6B00989B1E /* IngredientsViewController.m */,
+				0BDEF04E18F9276900989B1E /* NewDrinkViewController.h */,
+				0BDEF04F18F9276900989B1E /* NewDrinkViewController.m */,
 				71D04A4318D309C40077B38B /* dialCell.xib */,
 				71DD223818D879A1005450FA /* dialCell2.xib */,
 				71D04A4518D311190077B38B /* drinks.json */,
@@ -399,6 +407,7 @@
 				0BDEF04718F91DB500989B1E /* facebook500.png in Resources */,
 				71DD0C6218D31DD900152D0C /* kevin_durant.png in Resources */,
 				71D04A5118D3114C0077B38B /* paul_george.png in Resources */,
+				0BDEF04D18F9243900989B1E /* addthis500.2.png in Resources */,
 				71DD223D18D885F3005450FA /* awcollectionviewdiallayout_2.jpg in Resources */,
 				0BDEF04B18F91DF100989B1E /* pinterest.png in Resources */,
 				0BDEF04518F91DAB00989B1E /* sharethis.png in Resources */,
@@ -443,6 +452,7 @@
 				71D04A2118D3068F0077B38B /* ViewController.m in Sources */,
 				71D04A1818D3068F0077B38B /* AppDelegate.m in Sources */,
 				0BDEF03E18F911F900989B1E /* ALRadialMenu.m in Sources */,
+				0BDEF05018F9276900989B1E /* NewDrinkViewController.m in Sources */,
 				0BDEF03D18F911F900989B1E /* ALRadialButton.m in Sources */,
 				71D04A1418D3068F0077B38B /* main.m in Sources */,
 				71D04A4218D306A30077B38B /* AWCollectionViewDialLayout.m in Sources */,

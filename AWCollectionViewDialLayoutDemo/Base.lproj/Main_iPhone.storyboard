@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tVb-ED-Uae">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="tVb-ED-Uae">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -8,15 +8,11 @@
         <scene sceneID="obL-HP-mCs">
             <objects>
                 <viewController title="Ingredients" id="tVb-ED-Uae" customClass="IngredientsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="NPs-Ky-Vd5"/>
-                        <viewControllerLayoutGuide type="bottom" id="jVf-5L-3DC"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="60B-nR-xkE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYc-8c-MOt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZYc-8c-MOt">
                                 <rect key="frame" x="20" y="28" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="cornerButton" image="menubutton.png">
@@ -26,19 +22,27 @@
                                     <action selector="menuPressed:" destination="tVb-ED-Uae" eventType="touchUpInside" id="iXJ-ex-8gJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whatchu Got?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESD-dK-Psj">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whatchu Got?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ESD-dK-Psj">
                                 <rect key="frame" x="20" y="101" width="280" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Hjf-Gp-ECG">
+                                <rect key="frame" x="43" y="148" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="addthis500.2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98878486754594141" green="1" blue="0.9726810968977041" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="cornerButton" destination="ZYc-8c-MOt" id="5Nm-RA-i4c"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="favs" id="0t7-JI-Hj2"/>
+                        <segue destination="2uJ-bj-Wc6" kind="modal" identifier="add" id="Foh-vY-24K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYR-uZ-awz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -49,15 +53,11 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MAV-9l-7jX"/>
-                        <viewControllerLayoutGuide type="bottom" id="zOQ-1H-SNP"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9M6-aW-M6X">
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="9M6-aW-M6X">
                                 <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -73,7 +73,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="ijf-jf-A8z"/>
                                 </connections>
                             </collectionView>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zNO-Xo-JY0">
+                            <navigationBar contentMode="scaleToFill" id="zNO-Xo-JY0">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.70588235290000001" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -92,12 +92,6 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="9M6-aW-M6X" secondAttribute="trailing" id="4U8-Jv-Siz"/>
-                            <constraint firstItem="zOQ-1H-SNP" firstAttribute="top" secondItem="9M6-aW-M6X" secondAttribute="bottom" id="71U-0G-itV"/>
-                            <constraint firstItem="9M6-aW-M6X" firstAttribute="top" secondItem="zNO-Xo-JY0" secondAttribute="bottom" id="UiV-RP-Ccu"/>
-                            <constraint firstItem="9M6-aW-M6X" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="neN-8H-Ocd"/>
-                        </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -110,8 +104,152 @@
             </objects>
             <point key="canvasLocation" x="469" y="181"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="9dl-hO-ImE">
+            <objects>
+                <viewController id="2uJ-bj-Wc6" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RL4-oy-HHg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DIG-co-zZs">
+                                <rect key="frame" x="118" y="531" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Drink">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToParse:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="ttS-dN-Jl5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" textAlignment="center" minimumFontSize="17" id="zZO-ar-tRx">
+                                <rect key="frame" x="79" y="58" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="wtd-Ha-bGR"/>
+                                </connections>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="6tZ-iL-Qmf">
+                                <rect key="frame" x="101" y="444" width="201" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="OTI-3R-Z0T">
+                                <rect key="frame" x="101" y="485" width="201" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="First Ingredient" textAlignment="center" minimumFontSize="17" id="pbH-r5-F61">
+                                <rect key="frame" x="153" y="112" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="3Ky-d6-lxZ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Second Ingredient" textAlignment="center" minimumFontSize="17" id="rYa-oc-bwE">
+                                <rect key="frame" x="153" y="150" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="q3p-pI-nWE"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Third Ingredient" textAlignment="center" minimumFontSize="17" id="qML-4h-DvP">
+                                <rect key="frame" x="153" y="188" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="DRC-9J-D7X"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Fourth Ingredient" textAlignment="center" minimumFontSize="17" id="Iad-Pf-QHr">
+                                <rect key="frame" x="153" y="226" width="162" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2uJ-bj-Wc6" id="5Yu-IF-iEa"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6w4-rN-IhX">
+                                <rect key="frame" x="20" y="111" width="115" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Ingredient">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addIngred:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="dZy-xG-k6d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w5l-IC-hHg">
+                                <rect key="frame" x="13" y="150" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Remove Ingredient">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeIngred:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="HXc-yc-bLZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lLe-zD-IEf">
+                                <rect key="frame" x="29" y="328" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addImage:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="9oz-Ez-AhE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="29o-wK-HSy">
+                                <rect key="frame" x="153" y="279" width="162" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make a New Drink" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qNs-MW-PUH">
+                                <rect key="frame" x="90" y="20" width="141" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Taste" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jHh-ln-AUf">
+                                <rect key="frame" x="32" y="450" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Freshness" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JeK-Uw-Z4r">
+                                <rect key="frame" x="13" y="491" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="drinkImage" destination="29o-wK-HSy" id="Nig-Qa-dC7"/>
+                        <outlet property="drinkName" destination="zZO-ar-tRx" id="aDw-wp-Ry4"/>
+                        <outlet property="firstIng" destination="pbH-r5-F61" id="GGb-oP-t4l"/>
+                        <outlet property="fourthIng" destination="Iad-Pf-QHr" id="WUB-79-9Vx"/>
+                        <outlet property="freshness" destination="OTI-3R-Z0T" id="AnP-MQ-PCm"/>
+                        <outlet property="removeButton" destination="w5l-IC-hHg" id="S3n-Tk-D3A"/>
+                        <outlet property="secondIng" destination="rYa-oc-bwE" id="BaR-ms-qn2"/>
+                        <outlet property="taste" destination="6tZ-iL-Qmf" id="clP-Jr-XfE"/>
+                        <outlet property="thirdIng" destination="qML-4h-DvP" id="H2V-OE-2Xa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5rz-lB-na5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="898"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="addthis500.2.png" width="500" height="500"/>
         <image name="menubutton.png" width="500" height="500"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
