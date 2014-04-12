@@ -81,10 +81,6 @@ static NSString *cellId2 = @"cellId2";
     
 }
 
--(IBAction)goBack:(id)sender    {
-    [self performSegueWithIdentifier:@"backFromFavorites" sender:self];
-}
-
 -(void)buildSettings{
     NSArray *viewArr = [[NSBundle mainBundle] loadNibNamed:@"iphone_settings_view" owner:self options:nil];
     UIView *innerView = [viewArr objectAtIndex:0];
@@ -220,7 +216,7 @@ static NSString *cellId2 = @"cellId2";
         UIView *borderView = [cell viewWithTag:102];
         
         borderView.layer.borderWidth = 1;
-        borderView.layer.borderColor = [self colorFromHex:hexColor].CGColor;
+        borderView.layer.borderColor = [self colorFromHex:@"ffffff"].CGColor;
         
         NSString *imgURL = [item valueForKey:@"picture"];
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
@@ -299,8 +295,6 @@ static NSString *cellId2 = @"cellId2";
 
 - (NSMutableArray*)downloadAllDrinks
 {
-    
-    NSLog(@"dfsjlkafjls;");
     PFQuery *query = [PFQuery queryWithClassName:@"Drink"];
     //PFUser *user = [PFUser currentUser];
     //[query whereKey:@"objectId" equalTo:@"6wz5f8NQns"];
@@ -322,7 +316,7 @@ static NSString *cellId2 = @"cellId2";
             
             }
         else    {
-            NSLog(@"damnit");
+            NSLog(@"nope");
         }
     //}];
     return [self setUpImages:allDrinks];
@@ -407,4 +401,7 @@ static NSString *cellId2 = @"cellId2";
 
 
 
+- (IBAction)backButton:(id)sender {
+    [self performSegueWithIdentifier:@"fromFavs" sender:sender];
+}
 @end
