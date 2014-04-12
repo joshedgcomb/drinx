@@ -7,28 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BDEEFD118F909E200989B1E /* ALAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEEFB218F909E200989B1E /* ALAppDelegate.m */; };
-		0BDEEFD218F909E200989B1E /* ALRadialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEEFB518F909E200989B1E /* ALRadialButton.m */; };
-		0BDEEFD318F909E200989B1E /* ALRadialMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEEFB718F909E200989B1E /* ALRadialMenu.m */; };
-		0BDEEFD418F909E200989B1E /* ALRadial-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFB818F909E200989B1E /* ALRadial-Info.plist */; };
-		0BDEEFD518F909E200989B1E /* ALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEEFBB18F909E200989B1E /* ALViewController.m */; };
-		0BDEEFD618F909E200989B1E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFBC18F909E200989B1E /* Default-568h@2x.png */; };
-		0BDEEFD718F909E200989B1E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFBD18F909E200989B1E /* Default.png */; };
-		0BDEEFD818F909E200989B1E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFBE18F909E200989B1E /* Default@2x.png */; };
-		0BDEEFD918F909E200989B1E /* ALViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFBF18F909E200989B1E /* ALViewController_iPad.xib */; };
-		0BDEEFDA18F909E200989B1E /* ALViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFC118F909E200989B1E /* ALViewController_iPhone.xib */; };
-		0BDEEFDB18F909E200989B1E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFC318F909E200989B1E /* InfoPlist.strings */; };
-		0BDEEFDC18F909E200989B1E /* addthis500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFC618F909E200989B1E /* addthis500.png */; };
-		0BDEEFDD18F909E200989B1E /* dribbble.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFC718F909E200989B1E /* dribbble.png */; };
-		0BDEEFDE18F909E200989B1E /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFC818F909E200989B1E /* email.png */; };
-		0BDEEFDF18F909E200989B1E /* facebook500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFC918F909E200989B1E /* facebook500.png */; };
-		0BDEEFE018F909E200989B1E /* googleplus-revised.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFCA18F909E200989B1E /* googleplus-revised.png */; };
-		0BDEEFE118F909E200989B1E /* instagram500.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFCB18F909E200989B1E /* instagram500.png */; };
-		0BDEEFE218F909E200989B1E /* pinterest.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFCC18F909E200989B1E /* pinterest.png */; };
-		0BDEEFE318F909E200989B1E /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFCD18F909E200989B1E /* twitter.png */; };
-		0BDEEFE418F909E200989B1E /* vimeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFCE18F909E200989B1E /* vimeo.png */; };
-		0BDEEFE518F909E200989B1E /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEEFCF18F909E200989B1E /* youtube.png */; };
-		0BDEEFE618F909E200989B1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDEEFD018F909E200989B1E /* main.m */; };
 		71D04A0818D3068F0077B38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0718D3068F0077B38B /* Foundation.framework */; };
 		71D04A0A18D3068F0077B38B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0918D3068F0077B38B /* CoreGraphics.framework */; };
 		71D04A0C18D3068F0077B38B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0B18D3068F0077B38B /* UIKit.framework */; };
@@ -82,33 +60,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BDEEFB118F909E200989B1E /* ALAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAppDelegate.h; sourceTree = "<group>"; };
-		0BDEEFB218F909E200989B1E /* ALAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAppDelegate.m; sourceTree = "<group>"; };
-		0BDEEFB418F909E200989B1E /* ALRadialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialButton.h; sourceTree = "<group>"; };
-		0BDEEFB518F909E200989B1E /* ALRadialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialButton.m; sourceTree = "<group>"; };
-		0BDEEFB618F909E200989B1E /* ALRadialMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALRadialMenu.h; sourceTree = "<group>"; };
-		0BDEEFB718F909E200989B1E /* ALRadialMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALRadialMenu.m; sourceTree = "<group>"; };
-		0BDEEFB818F909E200989B1E /* ALRadial-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ALRadial-Info.plist"; sourceTree = "<group>"; };
-		0BDEEFB918F909E200989B1E /* ALRadial-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALRadial-Prefix.pch"; sourceTree = "<group>"; };
-		0BDEEFBA18F909E200989B1E /* ALViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALViewController.h; sourceTree = "<group>"; };
-		0BDEEFBB18F909E200989B1E /* ALViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALViewController.m; sourceTree = "<group>"; };
-		0BDEEFBC18F909E200989B1E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		0BDEEFBD18F909E200989B1E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		0BDEEFBE18F909E200989B1E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		0BDEEFC018F909E200989B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ALViewController_iPad.xib; sourceTree = "<group>"; };
-		0BDEEFC218F909E200989B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ALViewController_iPhone.xib; sourceTree = "<group>"; };
-		0BDEEFC418F909E200989B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		0BDEEFC618F909E200989B1E /* addthis500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addthis500.png; sourceTree = "<group>"; };
-		0BDEEFC718F909E200989B1E /* dribbble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dribbble.png; sourceTree = "<group>"; };
-		0BDEEFC818F909E200989B1E /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
-		0BDEEFC918F909E200989B1E /* facebook500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook500.png; sourceTree = "<group>"; };
-		0BDEEFCA18F909E200989B1E /* googleplus-revised.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "googleplus-revised.png"; sourceTree = "<group>"; };
-		0BDEEFCB18F909E200989B1E /* instagram500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram500.png; sourceTree = "<group>"; };
-		0BDEEFCC18F909E200989B1E /* pinterest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinterest.png; sourceTree = "<group>"; };
-		0BDEEFCD18F909E200989B1E /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
-		0BDEEFCE18F909E200989B1E /* vimeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vimeo.png; sourceTree = "<group>"; };
-		0BDEEFCF18F909E200989B1E /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
-		0BDEEFD018F909E200989B1E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71D04A0418D3068F0077B38B /* AWCollectionViewDialLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWCollectionViewDialLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D04A0718D3068F0077B38B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71D04A0918D3068F0077B38B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -191,56 +142,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BDEEFB018F909E200989B1E /* ALRadial */ = {
-			isa = PBXGroup;
-			children = (
-				0BDEEFB118F909E200989B1E /* ALAppDelegate.h */,
-				0BDEEFB218F909E200989B1E /* ALAppDelegate.m */,
-				0BDEEFB318F909E200989B1E /* ALRadial */,
-				0BDEEFB818F909E200989B1E /* ALRadial-Info.plist */,
-				0BDEEFB918F909E200989B1E /* ALRadial-Prefix.pch */,
-				0BDEEFBA18F909E200989B1E /* ALViewController.h */,
-				0BDEEFBB18F909E200989B1E /* ALViewController.m */,
-				0BDEEFBC18F909E200989B1E /* Default-568h@2x.png */,
-				0BDEEFBD18F909E200989B1E /* Default.png */,
-				0BDEEFBE18F909E200989B1E /* Default@2x.png */,
-				0BDEEFBF18F909E200989B1E /* ALViewController_iPad.xib */,
-				0BDEEFC118F909E200989B1E /* ALViewController_iPhone.xib */,
-				0BDEEFC318F909E200989B1E /* InfoPlist.strings */,
-				0BDEEFC518F909E200989B1E /* images */,
-				0BDEEFD018F909E200989B1E /* main.m */,
-			);
-			path = ALRadial;
-			sourceTree = SOURCE_ROOT;
-		};
-		0BDEEFB318F909E200989B1E /* ALRadial */ = {
-			isa = PBXGroup;
-			children = (
-				0BDEEFB418F909E200989B1E /* ALRadialButton.h */,
-				0BDEEFB518F909E200989B1E /* ALRadialButton.m */,
-				0BDEEFB618F909E200989B1E /* ALRadialMenu.h */,
-				0BDEEFB718F909E200989B1E /* ALRadialMenu.m */,
-			);
-			path = ALRadial;
-			sourceTree = "<group>";
-		};
-		0BDEEFC518F909E200989B1E /* images */ = {
-			isa = PBXGroup;
-			children = (
-				0BDEEFC618F909E200989B1E /* addthis500.png */,
-				0BDEEFC718F909E200989B1E /* dribbble.png */,
-				0BDEEFC818F909E200989B1E /* email.png */,
-				0BDEEFC918F909E200989B1E /* facebook500.png */,
-				0BDEEFCA18F909E200989B1E /* googleplus-revised.png */,
-				0BDEEFCB18F909E200989B1E /* instagram500.png */,
-				0BDEEFCC18F909E200989B1E /* pinterest.png */,
-				0BDEEFCD18F909E200989B1E /* twitter.png */,
-				0BDEEFCE18F909E200989B1E /* vimeo.png */,
-				0BDEEFCF18F909E200989B1E /* youtube.png */,
-			);
-			path = images;
-			sourceTree = "<group>";
-		};
 		71D049FB18D3068F0077B38B = {
 			isa = PBXGroup;
 			children = (
@@ -306,7 +207,6 @@
 		71D04A0E18D3068F0077B38B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0BDEEFB018F909E200989B1E /* ALRadial */,
 				71D04A0F18D3068F0077B38B /* AWCollectionViewDialLayoutDemo-Info.plist */,
 				71D04A1018D3068F0077B38B /* InfoPlist.strings */,
 				71D04A1318D3068F0077B38B /* main.m */,
@@ -436,40 +336,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BDEEFD418F909E200989B1E /* ALRadial-Info.plist in Resources */,
 				71DD0C6218D31DD900152D0C /* kevin_durant.png in Resources */,
-				0BDEEFD918F909E200989B1E /* ALViewController_iPad.xib in Resources */,
 				71D04A5118D3114C0077B38B /* paul_george.png in Resources */,
 				71DD223D18D885F3005450FA /* awcollectionviewdiallayout_2.jpg in Resources */,
-				0BDEEFE018F909E200989B1E /* googleplus-revised.png in Resources */,
-				0BDEEFE318F909E200989B1E /* twitter.png in Resources */,
-				0BDEEFD718F909E200989B1E /* Default.png in Resources */,
 				71D04A1E18D3068F0077B38B /* Main_iPad.storyboard in Resources */,
-				0BDEEFE118F909E200989B1E /* instagram500.png in Resources */,
 				71D04A4F18D3114C0077B38B /* kyrie_irving.png in Resources */,
 				71DD0C6418D3540400152D0C /* iphone_settings_view.xib in Resources */,
 				71D04A5018D3114C0077B38B /* lebron_james.png in Resources */,
-				0BDEEFDA18F909E200989B1E /* ALViewController_iPhone.xib in Resources */,
 				71D04A5318D315980077B38B /* james_harden.png in Resources */,
 				71D04A4418D309C40077B38B /* dialCell.xib in Resources */,
 				71D04A4E18D3114C0077B38B /* dwayne_wade.png in Resources */,
 				71D04A4618D311190077B38B /* drinks.json in Resources */,
 				71D04A2318D3068F0077B38B /* Images.xcassets in Resources */,
-				0BDEEFD618F909E200989B1E /* Default-568h@2x.png in Resources */,
 				71DD223918D879A1005450FA /* dialCell2.xib in Resources */,
-				0BDEEFD818F909E200989B1E /* Default@2x.png in Resources */,
-				0BDEEFDC18F909E200989B1E /* addthis500.png in Resources */,
-				0BDEEFE518F909E200989B1E /* youtube.png in Resources */,
-				0BDEEFDE18F909E200989B1E /* email.png in Resources */,
-				0BDEEFDB18F909E200989B1E /* InfoPlist.strings in Resources */,
-				0BDEEFDF18F909E200989B1E /* facebook500.png in Resources */,
 				71DD223C18D885F3005450FA /* awcollectionviewdiallayout_1.jpg in Resources */,
 				71D04A1B18D3068F0077B38B /* Main_iPhone.storyboard in Resources */,
-				0BDEEFDD18F909E200989B1E /* dribbble.png in Resources */,
 				71D04A4D18D3114C0077B38B /* carmelo_anthony.png in Resources */,
 				71D04A1218D3068F0077B38B /* InfoPlist.strings in Resources */,
-				0BDEEFE218F909E200989B1E /* pinterest.png in Resources */,
-				0BDEEFE418F909E200989B1E /* vimeo.png in Resources */,
 				DA89B75518F8F5F700C051C1 /* strawberry_margarita.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,14 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				71D04A2118D3068F0077B38B /* ViewController.m in Sources */,
-				0BDEEFD518F909E200989B1E /* ALViewController.m in Sources */,
 				71D04A1818D3068F0077B38B /* AppDelegate.m in Sources */,
 				71D04A1418D3068F0077B38B /* main.m in Sources */,
-				0BDEEFD318F909E200989B1E /* ALRadialMenu.m in Sources */,
-				0BDEEFD218F909E200989B1E /* ALRadialButton.m in Sources */,
 				71D04A4218D306A30077B38B /* AWCollectionViewDialLayout.m in Sources */,
-				0BDEEFE618F909E200989B1E /* main.m in Sources */,
-				0BDEEFD118F909E200989B1E /* ALAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,30 +398,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0BDEEFBF18F909E200989B1E /* ALViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BDEEFC018F909E200989B1E /* en */,
-			);
-			name = ALViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		0BDEEFC118F909E200989B1E /* ALViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BDEEFC218F909E200989B1E /* en */,
-			);
-			name = ALViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		0BDEEFC318F909E200989B1E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0BDEEFC418F909E200989B1E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		71D04A1018D3068F0077B38B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
