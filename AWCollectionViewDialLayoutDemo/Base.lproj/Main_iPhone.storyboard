@@ -81,6 +81,8 @@
                                 </state>
                                 <connections>
                                     <action selector="addIngred:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="llJ-dK-vcH"/>
+                                    <action selector="addIngred:" destination="tVb-ED-Uae" eventType="touchUpInside" id="wIP-nJ-qSZ"/>
+                                    <action selector="removeIngred:" destination="tVb-ED-Uae" eventType="touchUpInside" id="G72-pv-BH3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="trz-bZ-Mvh">
@@ -109,7 +111,14 @@
                         <color key="backgroundColor" red="0.45485154590955107" green="0.86284279336734693" blue="0.84198526963001818" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="6fg-vI-6py" id="FMn-pZ-hPJ"/>
                         <outlet property="cornerButton" destination="ZYc-8c-MOt" id="5Nm-RA-i4c"/>
+                        <outlet property="firstIngred" destination="aPB-cZ-507" id="ttr-Ps-8hm"/>
+                        <outlet property="fourthIngred" destination="kSD-XT-hw7" id="iwV-dp-V0U"/>
+                        <outlet property="removeButton" destination="trz-bZ-Mvh" id="WaR-S0-CRJ"/>
+                        <outlet property="removeIngred" destination="trz-bZ-Mvh" id="Gyt-9B-3BU"/>
+                        <outlet property="secondIngred" destination="g5O-Mj-JN3" id="Pgb-bU-AgH"/>
+                        <outlet property="thirdIngred" destination="V4b-Xa-Fc3" id="ewN-7o-Gef"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="favs" id="0t7-JI-Hj2"/>
                         <segue destination="2uJ-bj-Wc6" kind="modal" identifier="add" id="Foh-vY-24K"/>
                     </connections>
