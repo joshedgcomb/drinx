@@ -151,6 +151,7 @@
 }
 
 - (void) radialMenu:(ALRadialMenu *)radialMenu didSelectItemAtIndex:(NSInteger)index {
+    self.myIndex = index;
 	if (radialMenu == self.cornerMenu) {
 		[self.cornerMenu itemsWillDisapearIntoButton:self.cornerButton];
 		if (index == 1) {
@@ -161,6 +162,7 @@
             [self performSegueWithIdentifier:@"favs" sender:self.cornerButton];
 		} else if (index == 3) {
 			NSLog(@"drinks");
+            [self performSegueWithIdentifier:@"favs" sender:self.cornerButton];
 		}
 	}
     
@@ -169,10 +171,18 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if (index == 2 || index == 3)   {
+    NSLog(@"yoooo");
+    if (self.myIndex == 2)   {
         
-    ViewController* controller = (ViewController *)segue.destinationViewController;
-    controller.viewTitle = segue.identifier;
+        ViewController* controller = (ViewController *) [segue destinationViewController];
+        controller.viewTitle = @"Favorites";
+        NSLog(@"blehhhh");
+        controller.numnum = 2;
+    }
+    else if (self.myIndex == 3)    {
+        ViewController* controller = (ViewController *) [segue destinationViewController];
+        controller.viewTitle = @"All Drinks";
+        controller.numnum = 3;
     }
 }
 
