@@ -307,20 +307,20 @@
                                     <action selector="backButton:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="Zfm-JV-vu2"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2vL-yb-A8K">
-                                <rect key="frame" x="8" y="57" width="101" height="101"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O3G-Fa-syf">
+                                <rect key="frame" x="9" y="57" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O3G-Fa-syf">
-                                <rect key="frame" x="172" y="55" width="73" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="add image">
+                                <state key="normal" image="addpicture.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="chooseImage:" destination="2uJ-bj-Wc6" eventType="touchUpInside" id="OAL-c2-E2H"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2vL-yb-A8K">
+                                <rect key="frame" x="9" y="57" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.45485154589999999" green="0.86284279340000003" blue="0.84198526959999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -475,6 +475,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addpicture.png" width="500" height="500"/>
         <image name="addthis500.2.png" width="500" height="500"/>
         <image name="backarrow.png" width="500" height="500"/>
         <image name="favoritesbutton.png" width="500" height="500"/>
