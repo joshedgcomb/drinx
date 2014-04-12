@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BDEF02118F90CD800989B1E /* ALRadial in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEF02018F90CD800989B1E /* ALRadial */; };
 		71D04A0818D3068F0077B38B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0718D3068F0077B38B /* Foundation.framework */; };
 		71D04A0A18D3068F0077B38B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0918D3068F0077B38B /* CoreGraphics.framework */; };
 		71D04A0C18D3068F0077B38B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D04A0B18D3068F0077B38B /* UIKit.framework */; };
@@ -60,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BDEF02018F90CD800989B1E /* ALRadial */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ALRadial; sourceTree = "<group>"; };
 		71D04A0418D3068F0077B38B /* AWCollectionViewDialLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWCollectionViewDialLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71D04A0718D3068F0077B38B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		71D04A0918D3068F0077B38B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -237,6 +239,7 @@
 		71D04A3F18D306930077B38B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0BDEF02018F90CD800989B1E /* ALRadial */,
 				71D04A4018D306A30077B38B /* AWCollectionViewDialLayout.h */,
 				71D04A4118D306A30077B38B /* AWCollectionViewDialLayout.m */,
 			);
@@ -343,6 +346,7 @@
 				71D04A4F18D3114C0077B38B /* kyrie_irving.png in Resources */,
 				71DD0C6418D3540400152D0C /* iphone_settings_view.xib in Resources */,
 				71D04A5018D3114C0077B38B /* lebron_james.png in Resources */,
+				0BDEF02118F90CD800989B1E /* ALRadial in Resources */,
 				71D04A5318D315980077B38B /* james_harden.png in Resources */,
 				71D04A4418D309C40077B38B /* dialCell.xib in Resources */,
 				71D04A4E18D3114C0077B38B /* dwayne_wade.png in Resources */,
