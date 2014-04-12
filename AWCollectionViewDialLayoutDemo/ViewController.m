@@ -206,7 +206,18 @@ static NSString *cellId2 = @"cellId2";
     //NSString *playerName = [item valueForKey:@"name"];
     UILabel *nameLabel = (UILabel*)[cell viewWithTag:101];
     PFObject* currentDrink = [allDrinks objectAtIndex:indexPath.item];
-    [nameLabel setText:[currentDrink objectForKey:@"name"]];
+    NSMutableString *drinkText = [[currentDrink objectForKey:@"name"] mutableCopy];
+    float freshNum = [[currentDrink objectForKey:@"freshness"] floatValue];
+    float tasteNum = [[currentDrink objectForKey:@"taste"] floatValue];
+    float scoreNum = freshNum + tasteNum;
+    NSString *scoreString = [NSString stringWithFormat:@"%f", scoreNum];
+    NSString *dashString = @" - ";
+    [drinkText appendString:dashString];
+    [drinkText appendString:scoreString];
+    
+    
+    
+    [nameLabel setText:drinkText];
     
     
     NSString *hexColor = [item valueForKey:@"team-color"];
